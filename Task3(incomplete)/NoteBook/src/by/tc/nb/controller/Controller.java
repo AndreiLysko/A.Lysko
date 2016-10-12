@@ -14,7 +14,7 @@ public class Controller {
 
     public Response doRequest(Request request) {
 
-        Response response;
+        Response response = null;
         String commandName = request.getCommandName();
         Command command = helper.getCommand(commandName);
 

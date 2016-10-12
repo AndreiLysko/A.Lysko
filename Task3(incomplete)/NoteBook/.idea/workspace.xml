@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66a03019-3cb2-4fc2-9115-809cb2e5b15a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/by/tc/nb/view/UserInterface.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/Lyska.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/AddNoteResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/CreateNewRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/CreateNewResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/FindBookResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/ShowNotesRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/WriteNotebookTiFile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/impl/CreateNewNoteBook.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/impl/FindNotes.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook.iml" afterPath="$PROJECT_DIR$/NoteBook.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/AddNoteRequest.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/AddNoteRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/FindNoteByContentRequest.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/FindNoteByContentRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/FindNoteByContentResponse.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/FindNoteByContentResponse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/FindNoteByDateRequest.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/FindNoteByDateRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/LoadNotebookFromFileRequest.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/LoadNotebookFromFileRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/Request.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/Response.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/entity/Note.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/entity/Note.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/bean/entity/NoteBook.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/bean/entity/NoteBook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/Command.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/command/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/exception/CommandException.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/command/exception/CommandException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/impl/AddNote.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/command/impl/AddNote.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/impl/FindNoteByContent.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/command/impl/FindNoteByContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/impl/FindNoteByDate.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/command/impl/FindNoteByDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/command/impl/LoadNotebookFromFile.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/command/impl/LoadNotebookFromFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/controller/CommandHelper.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/controller/CommandHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/source/NoteBookProvider.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/source/NoteBookProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/utils/NBUtilities.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/utils/NBUtilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/utils/check/Validate.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/utils/check/Validate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/by/tc/nb/view/View.java" afterPath="$PROJECT_DIR$/src/by/tc/nb/view/View.java" />
     </list>
     <ignored path="NoteBook.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/tc/nb/view/UserInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            <state relative-caret-position="160">
+              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,11 +67,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ViewNotes.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/by/tc/nb/command/impl/ViewNotes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -163,10 +136,10 @@
         <option value="$PROJECT_DIR$/src/by/tc/nb/command/impl/ViewNotes.java" />
         <option value="$PROJECT_DIR$/src/by/tc/nb/bean/entity/NoteBook.java" />
         <option value="$PROJECT_DIR$/src/by/tc/nb/utils/NBUtilities.java" />
-        <option value="$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/by/tc/nb/bean/entity/Note.java" />
         <option value="$PROJECT_DIR$/src/by/tc/nb/view/View.java" />
         <option value="$PROJECT_DIR$/src/by/tc/nb/view/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java" />
       </list>
     </option>
   </component>
@@ -846,14 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/tc/nb/command/impl/ViewNotes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/tc/nb/command/impl/ClearNotebook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -907,28 +872,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/tc/nb/utils/NBUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/tc/nb/bean/entity/Note.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -943,13 +890,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/tc/nb/utils/NBUtilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#289#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/tc/nb/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/by/tc/nb/view/UserInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="160">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/by/tc/nb/command/impl/ViewNotes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
