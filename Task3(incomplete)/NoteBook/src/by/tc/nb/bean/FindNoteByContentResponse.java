@@ -4,7 +4,7 @@ import by.tc.nb.bean.entity.Note;
 
 import java.util.List;
 
-public class FindNoteByContentResponse extends Response{
+public class FindNoteByContentResponse extends Response {
 
     List<Note> notes;
 

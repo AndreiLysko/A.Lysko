@@ -1,6 +1,6 @@
 package by.tc.nb.bean;
 
-public class LoadNotebookFromFileRequest extends  Request{
+public class LoadNotebookFromFileRequest extends Request {
 
     private String filePath;
 

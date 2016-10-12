@@ -6,28 +6,28 @@ import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
 
 public class Controller {
-	private CommandHelper helper = new CommandHelper();
-	
-	
-	public Controller(){}
-	
-	public Response doRequest(Request request){
-		String commandName = request.getCommandName();
-		
-		Command command = helper.getCommand(commandName);
-		
-		Response response;
-		try {
-			response = command.execute(request);
-		} catch (CommandException e) {
-			// logging
-			response = new Response();
-			response.setErrorStatus(true);
-			response.setErrorMessage("ERROR!");
-		}
-		
-		return response;
-		
-	}
+    private CommandHelper helper = new CommandHelper();
+
+
+    public Controller() {
+    }
+
+    public Response doRequest(Request request) {
+
+        Response response;
+        String commandName = request.getCommandName();
+        Command command = helper.getCommand(commandName);
+
+        try {
+            response = command.execute(request);
+        } catch (CommandException e) {
+            response = new Response();
+            response.setErrorStatus(true);
+            response.setErrorMessage("Error occured");
+        }
+
+        return response;
+
+    }
 
 }

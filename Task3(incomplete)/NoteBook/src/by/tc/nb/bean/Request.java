@@ -1,16 +1,15 @@
 package by.tc.nb.bean;
 
 public class Request {
-	private String commandName;
+    private String commandName;
 
-	public String getCommandName() {
-		return commandName;
-	}
+    public String getCommandName() {
+        return commandName;
+    }
 
-	public void setCommandName(String commandName) {
-		this.commandName = commandName;
-	}
-	
-	
+    public void setCommandName(String commandName) {
+        this.commandName = commandName;
+    }
+
 
 }

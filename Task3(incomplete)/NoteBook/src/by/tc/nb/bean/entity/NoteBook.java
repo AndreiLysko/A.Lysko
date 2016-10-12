@@ -5,24 +5,22 @@ import java.util.List;
 
 public class NoteBook {
 
-	List<Note> notes = null;
+    ArrayList<Note> notes = new ArrayList<Note>();
 
-	public NoteBook() {
-		notes = new ArrayList<>();
-	}
+    public NoteBook() {
+    }
 
-	public NoteBook(List<Note> notes) {
-		this.notes = notes;
-	}
+    public NoteBook(ArrayList<Note> notes) {
+        this.notes = notes;
+    }
 
-	public void setNotes(List<Note> notes) {
-		this.notes = notes;
-	}
+    public ArrayList<Note> getNotes() {
+        return new ArrayList<>(notes);
+    }
 
-	public List<Note> getNotes() {
-		return new ArrayList<>(notes);
-	}
-
+    public void setNotes(ArrayList<Note> notes) {
+        this.notes = notes;
+    }
 
 
 }

@@ -1,6 +1,6 @@
 package by.tc.nb.bean;
 
-public class FindNoteByContentRequest extends Request{
+public class FindNoteByContentRequest extends Request {
 
     private String content;
 

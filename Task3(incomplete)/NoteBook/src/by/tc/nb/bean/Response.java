@@ -1,35 +1,34 @@
 package by.tc.nb.bean;
 
 public class Response {
-	private boolean errorStatus;
-	private String errorMessage;
-	
-	private String resultMessage;
+    private boolean errorStatus;
+    private String errorMessage;
 
-	public boolean isErrorStatus() {
-		return errorStatus;
-	}
+    private String resultMessage;
 
-	public void setErrorStatus(boolean errorStatus) {
-		this.errorStatus = errorStatus;
-	}
+    public boolean isErrorStatus() {
+        return errorStatus;
+    }
 
-	public String getErrorMessage() {
-		return errorMessage;
-	}
+    public void setErrorStatus(boolean errorStatus) {
+        this.errorStatus = errorStatus;
+    }
 
-	public void setErrorMessage(String errorMessage) {
-		this.errorMessage = errorMessage;
-	}
+    public String getErrorMessage() {
+        return errorMessage;
+    }
 
-	public String getResultMessage() {
-		return resultMessage;
-	}
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
 
-	public void setResultMessage(String resultMessage) {
-		this.resultMessage = resultMessage;
-	}
-	
-	
+    public String getResultMessage() {
+        return resultMessage;
+    }
+
+    public void setResultMessage(String resultMessage) {
+        this.resultMessage = resultMessage;
+    }
+
 
 }

@@ -8,17 +8,17 @@ public class Note {
     public Note() {
     }
 
-    public Note(String creationDate, String data) {
-        this.creationDate = creationDate;
+    public Note(String data, String creationDate) {
         this.data = data;
-    }
-
-    public void setCreationDate(String creationDate) {
         this.creationDate = creationDate;
     }
 
     public String getCreationDate() {
         return creationDate;
+    }
+
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
     }
 
     public String getData() {
@@ -30,7 +30,8 @@ public class Note {
     }
 
     @Override
-    public String toString(){
+
+    public String toString() {
         return (creationDate + "  ||  " + data);
     }
 

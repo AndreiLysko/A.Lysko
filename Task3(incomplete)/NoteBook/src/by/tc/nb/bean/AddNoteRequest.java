@@ -1,23 +1,23 @@
 package by.tc.nb.bean;
 
 public class AddNoteRequest extends Request {
-	private String note;
-	private String creationDate;
+    private String note;
+    private String creationDate;
 
-	public String getCreationDate() {
-		return creationDate;
-	}
+    public String getCreationDate() {
+        return creationDate;
+    }
 
-	public void setCreationDate(String creationDate) {
-		this.creationDate = creationDate;
-	}
+    public void setCreationDate(String creationDate) {
+        this.creationDate = creationDate;
+    }
 
-	public String getNote() {
-		return note;
-	}
+    public String getNote() {
+        return note;
+    }
 
-	public void setNote(String note) {
-		this.note = note;
-	}
+    public void setNote(String note) {
+        this.note = note;
+    }
 
 }

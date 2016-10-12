@@ -19,9 +19,9 @@ public class LoadNotebookFromFile implements Command {
         if (request instanceof LoadNotebookFromFileRequest) {
             NoteBook noteBook = NoteBookProvider.getInstance().getNoteBook();
             try {
-                NBUtilities.getAllNotesFromFile(((LoadNotebookFromFileRequest) request).getFilePath(), noteBook);
+                NBUtilities.loadNotesFromFile(((LoadNotebookFromFileRequest) request).getFilePath(), noteBook);
             } catch (IOException e) {
-                throw new CommandException("Invalid filepath");
+                throw new CommandException("Incorrect filepath");
             }
 
             Response response = new Response();
@@ -31,7 +31,7 @@ public class LoadNotebookFromFile implements Command {
             return response;
 
         } else {
-            throw new CommandException("Wrong request!");
+            throw new CommandException("Incorrect request");
         }
     }
 }

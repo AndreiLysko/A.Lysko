@@ -12,28 +12,28 @@ import by.tc.nb.utils.NBUtilities;
 
 public class AddNote implements Command {
 
-	@Override
-	public Response execute(Request request) throws CommandException {
-		AddNoteRequest req;
-		
-		if(request instanceof AddNoteRequest){
-			req = (AddNoteRequest)request;
-		}else{
-			throw new CommandException("Wrong request");
-		}
-		
-		String note = req.getNote();
-		String creationDate = req.getCreationDate();
-		
-		NoteBook noteBook = NoteBookProvider.getInstance().getNoteBook();
-		NBUtilities.addNote(noteBook,new Note(note,creationDate));
+    @Override
+    public Response execute(Request request) throws CommandException {
+        AddNoteRequest req;
 
-		Response response = new Response();
-		response.setErrorStatus(false);
-		response.setResultMessage("Note has been successfully added");
-		
-		
-		return response;
-	}
+        if (request instanceof AddNoteRequest) {
+            req = (AddNoteRequest) request;
+        } else {
+            throw new CommandException("Incorrect request");
+        }
+
+        String note = req.getNote();
+        String creationDate = req.getCreationDate();
+
+        NoteBook noteBook = NoteBookProvider.getInstance().getNoteBook();
+        NBUtilities.addNote(noteBook, new Note(note, creationDate));
+
+        Response response = new Response();
+        response.setErrorStatus(false);
+        response.setResultMessage("Note has been successfully added");
+
+
+        return response;
+    }
 
 }

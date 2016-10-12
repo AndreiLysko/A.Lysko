@@ -5,5 +5,5 @@ import by.tc.nb.bean.Response;
 import by.tc.nb.command.exception.CommandException;
 
 public interface Command {
-	Response execute(Request request) throws CommandException;
+    Response execute(Request request) throws CommandException;
 }

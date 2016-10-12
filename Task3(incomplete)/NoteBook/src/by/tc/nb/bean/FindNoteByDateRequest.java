@@ -1,6 +1,6 @@
 package by.tc.nb.bean;
 
-public class FindNoteByDateRequest extends Request{
+public class FindNoteByDateRequest extends Request {
 
     private String date;
 
