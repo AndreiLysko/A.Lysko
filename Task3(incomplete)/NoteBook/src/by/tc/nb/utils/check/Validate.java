@@ -4,7 +4,7 @@ import by.tc.nb.bean.entity.Note;
 
 public class Validate {
 
-    private static final String REG_EXP_NOTE = "^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d  \\|  (.*)";
+    private static final String REG_EXP_NOTE = "^(0[1-9]|[12][0-9]|3[01])[/.](0[1-9]|1[012])[\\\\.](19|20)\\d\\d  \\|\\|  (.*)";
 
     public static boolean content(String content, Note note) {
 

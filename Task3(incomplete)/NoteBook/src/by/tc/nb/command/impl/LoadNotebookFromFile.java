@@ -27,6 +27,7 @@ public class LoadNotebookFromFile implements Command {
             Response response = new Response();
             response.setErrorStatus(false);
             response.setResultMessage("Notes have been successfully read");
+            System.out.println(response.getResultMessage());
 
             return response;
 

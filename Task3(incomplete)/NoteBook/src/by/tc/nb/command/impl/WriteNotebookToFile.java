@@ -29,7 +29,8 @@ public class WriteNotebookToFile implements Command {
 
             Response response = new Response();
             response.setErrorStatus(false);
-            response.setResultMessage("Notes have been successfully written to file");
+            response.setResultMessage("Notes have been successfully written to file ");
+            System.out.println(response.getResultMessage() + ((WriteNotebookToFileRequest)request).getFilePath());
             return response;
         } else {
             throw new CommandException("Incorrect request");

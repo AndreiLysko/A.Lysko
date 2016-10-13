@@ -21,6 +21,7 @@ public class ViewNotes implements Command {
             response.setNotes(NoteBookProvider.getInstance().getNoteBook().getNotes());
             response.setErrorStatus(false);
             response.setResultMessage("Viewing all notes:");
+            System.out.println(response.getResultMessage());
             return response;
 
         } else {

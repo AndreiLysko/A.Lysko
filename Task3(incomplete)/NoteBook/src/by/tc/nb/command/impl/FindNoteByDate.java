@@ -31,6 +31,7 @@ public class FindNoteByDate implements Command {
         response.setNotes(NBUtilities.findNotesByDate(dateToFind, noteBook));
         response.setErrorStatus(false);
         response.setResultMessage("Search date found");
+        System.out.println(response.getResultMessage());
 
         return response;
     }

@@ -31,6 +31,7 @@ public class FindNoteByContent implements Command {
         response.setNotes(NBUtilities.findNotesByContent(searchContent, noteBook));
         response.setErrorStatus(false);
         response.setResultMessage("Search text found");
+        System.out.println(response.getResultMessage());
 
         return response;
     }

@@ -1,4 +1,4 @@
-package by.tc.nb.view;
+package by.tc.nb.utils;
 
 import by.tc.nb.bean.*;
 import by.tc.nb.bean.entity.Note;
@@ -9,7 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class UserInterface {
+public class InterfaceWork {
 
     private static final Controller controller = new Controller();
     private static final Scanner sc = new Scanner(System.in);
@@ -77,7 +77,6 @@ public class UserInterface {
     }
 
     private static void viewNotes(){
-        System.out.println("Viewing all notes:");
 
         ViewNotesRequest request = new ViewNotesRequest();
         request.setCommandName("VIEW_ALL_NOTES");
@@ -155,7 +154,7 @@ public class UserInterface {
         request.setCommandName("CLEAR_NOTEBOOK");
 
         Response response = controller.doRequest(request);
-        if(!response.isErrorStatus()){
+        if(response.isErrorStatus()){
             System.out.println(response.getErrorMessage());
         }
     }

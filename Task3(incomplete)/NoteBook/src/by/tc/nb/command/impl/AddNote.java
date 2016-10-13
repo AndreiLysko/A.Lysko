@@ -31,8 +31,8 @@ public class AddNote implements Command {
 
         Response response = new Response();
         response.setErrorStatus(false);
-        response.setResultMessage("Note has been successfully added");
-        System.out.println("Note added " + note.toString());
+        response.setResultMessage("Note has been successfully added --> ");
+        System.out.println(response.getResultMessage() + note.toString());
 
         return response;
     }
