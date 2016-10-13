@@ -6,17 +6,16 @@ import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
 
 public class Controller {
-    private CommandHelper helper = new CommandHelper();
 
+    private CommandHelper helper = new CommandHelper();
 
     public Controller() {
     }
 
     public Response doRequest(Request request) {
-
-        Response response = null;
         String commandName = request.getCommandName();
         Command command = helper.getCommand(commandName);
+        Response response;
 
         try {
             response = command.execute(request);

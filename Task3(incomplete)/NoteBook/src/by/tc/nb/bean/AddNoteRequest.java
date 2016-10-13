@@ -1,7 +1,7 @@
 package by.tc.nb.bean;
 
 public class AddNoteRequest extends Request {
-    private String note;
+    private String data;
     private String creationDate;
 
     public String getCreationDate() {
@@ -12,12 +12,12 @@ public class AddNoteRequest extends Request {
         this.creationDate = creationDate;
     }
 
-    public String getNote() {
-        return note;
+    public String getData() {
+        return data;
     }
 
-    public void setNote(String note) {
-        this.note = note;
+    public void setData(String data) {
+        this.data = data;
     }
 
 }

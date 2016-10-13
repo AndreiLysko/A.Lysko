@@ -32,7 +32,7 @@ public class Note {
     @Override
 
     public String toString() {
-        return (creationDate + "  ||  " + data);
+        return (this.creationDate + "  ||  " + this.data);
     }
 
 }

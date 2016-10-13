@@ -67,7 +67,7 @@ public class UserInterface {
 
         AddNoteRequest request = new AddNoteRequest();
         request.setCommandName("ADD_NEW_NOTE");
-        request.setNote(content);
+        request.setData(content);
         request.setCreationDate(date);
 
         Response response = controller.doRequest(request);
@@ -82,12 +82,23 @@ public class UserInterface {
         ViewNotesRequest request = new ViewNotesRequest();
         request.setCommandName("VIEW_ALL_NOTES");
 
-        Response response;
-        response = controller.doRequest(request);
+        ViewNotesResponse response;
+        response = (ViewNotesResponse) controller.doRequest(request);
 
-        if(!response.isErrorStatus()){
+        if(response.isErrorStatus()){
             System.out.println(response.getErrorMessage());
         }
+        else {
+            if (!response.getNotes().isEmpty()){
+                response.getNotes().stream().forEach(note -> System.out.println(note));
+            }
+            else{
+                System.out.println("Notebook is empty");
+            }
+        }
+
+
+
     }
 
     private static void findNoteByContent(){
@@ -128,9 +139,7 @@ public class UserInterface {
 
         System.out.println("Searching " + date);
         if (!notesFound.isEmpty()){
-            for (Note note : notesFound){
-                System.out.println(note);
-            }
+            notesFound.stream().forEach(note -> System.out.println(note));
         }
         else {
             System.out.println("No notes have been found for that date");

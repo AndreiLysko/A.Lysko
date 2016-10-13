@@ -22,16 +22,17 @@ public class AddNote implements Command {
             throw new CommandException("Incorrect request");
         }
 
-        String note = req.getNote();
+        String data = req.getData();
         String creationDate = req.getCreationDate();
+        Note note = new Note(data, creationDate);
 
-        NoteBook noteBook = NoteBookProvider.getInstance().getNoteBook();
-        NBUtilities.addNote(noteBook, new Note(note, creationDate));
+        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
+        NBUtilities.addNote(notebook, note);
 
         Response response = new Response();
         response.setErrorStatus(false);
         response.setResultMessage("Note has been successfully added");
-
+        System.out.println("Note added " + note.toString());
 
         return response;
     }

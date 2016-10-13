@@ -14,12 +14,6 @@ public class NBUtilities {
         nb.getNotes().add(note);
     }
 
-    public static void viewNotes(NoteBook noteBook) {
-        for (Note note : noteBook.getNotes()) {
-            System.out.println(note);
-        }
-    }
-
     public static ArrayList<Note> findNotesByContent(String searchData, NoteBook noteBook) {
 
         ArrayList<Note> notes = new ArrayList<>();

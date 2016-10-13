@@ -15,7 +15,7 @@ public class NoteBook {
     }
 
     public ArrayList<Note> getNotes() {
-        return new ArrayList<>(notes);
+        return notes;
     }
 
     public void setNotes(ArrayList<Note> notes) {
