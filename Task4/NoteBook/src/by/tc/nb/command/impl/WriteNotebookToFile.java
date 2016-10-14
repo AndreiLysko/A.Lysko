@@ -20,6 +20,7 @@ public class WriteNotebookToFile implements Command {
 
     @Override
     public Response execute(Request request) throws CommandException, IOException {
+
         WriteNotebookToFileRequest req;
 
         if (request instanceof WriteNotebookToFileRequest) {

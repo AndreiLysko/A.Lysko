@@ -21,4 +21,7 @@ public class NoteBookProvider {
         return noteBook;
     }
 
+    public void setNoteBook(NoteBook noteBook) {
+        this.noteBook = noteBook;
+    }
 }

@@ -143,12 +143,49 @@ public class NotebookServiceImpl implements NotebookService{
     }
 
     @Override
-    public void serializeNotebook(String filePath) throws ServiceException {
+    public void serializeNotebook(String filepath) throws ServiceException {
+        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
+        if(!Validate.isFile(filepath)){
+            throw new ServiceException("Incorrect filepath");
+        }
+        if (notebook.getNotes().isEmpty()){
+            throw new ServiceException("Notebook is empty");
+        }
+        else {
+            try {
+                FileOutputStream fos = new FileOutputStream(filepath);
+                ObjectOutputStream out = new ObjectOutputStream(fos);
+                out.writeObject(notebook);
 
+                System.out.println("Access writing to file!");
+                out.close();
+            } catch (FileNotFoundException e) {
+                throw new ServiceException("Writing to file failed " + e.getMessage());
+            } catch (IOException e) {
+                throw new ServiceException("Writing to file failed " + e.getMessage());
+            }
+        }
     }
 
     @Override
-    public ArrayList<Note> deserializeNotebook(String filePath) throws ServiceException {
-        return null;
+    public ArrayList<Note> deserializeNotebook(String filepath) throws ServiceException {
+        NoteBook notebook;
+        if (!Validate.isFile(filepath)) {
+            throw new ServiceException("Incorrect filepath");
+        }
+        else {
+            try {
+                FileInputStream in = new FileInputStream(filepath);
+                ObjectInputStream oin = new ObjectInputStream(in);
+                notebook = (NoteBook) oin.readObject();
+                in.close();
+            } catch (IOException e) {
+                throw new ServiceException("Loading from file failed " + e.getMessage());
+            } catch (ClassNotFoundException e) {
+                throw new ServiceException("Error occured " + e.getMessage());
+            }
+        }
+        NoteBookProvider.getInstance().setNoteBook(notebook);
+        return notebook.getNotes();
     }
 }
