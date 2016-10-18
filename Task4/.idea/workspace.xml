@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d796506c-0040-45e3-bbca-32bb4d96506e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/NBUtilities.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/entity/NoteBook.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/entity/NoteBook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/Command.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ClearNotebook.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ClearNotebook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/DeserializeNotebook.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/DeserializeNotebook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByContent.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByDate.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/LoadNotebookFromFile.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/LoadNotebookFromFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ViewNotes.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ViewNotes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/WriteNotebookToFile.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/WriteNotebookToFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/CommandHelper.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/CommandHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/Controller.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/check/Validate.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/check/Validate.java" />
     </list>
     <ignored path="Task4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NotebookServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NotebookServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+            <state relative-caret-position="407">
+              <caret line="172" column="55" selection-start-line="172" selection-start-column="55" selection-end-line="172" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeserializeNotebook.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DeserializeNotebook.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/DeserializeNotebook.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -74,8 +58,8 @@
       <file leaf-file-name="SerializeNotebook.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            <state relative-caret-position="340">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -123,11 +107,11 @@
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/CommandHelper.java" />
         <option value="$PROJECT_DIR$/notebook.txt" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/check/Validate.java" />
-        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/entity/NoteBook.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/DeserializeNotebook.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java" />
         <option value="$PROJECT_DIR$/notebookSerialize.txt" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -681,7 +665,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -690,7 +674,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1034,24 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/SerializeNotebookRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1059,14 +1025,6 @@
           <folding>
             <element signature="e#165#166#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1083,6 +1041,32 @@
         <state relative-caret-position="425">
           <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="218" column="0" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="172" column="55" selection-start-line="172" selection-start-column="55" selection-end-line="172" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

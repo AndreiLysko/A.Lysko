@@ -150,6 +150,7 @@ public class NotebookServiceImpl implements NotebookService{
                 FileOutputStream fos = new FileOutputStream(filepath);
                 ObjectOutputStream out = new ObjectOutputStream(fos);
                 out.writeObject(notebook);
+                out.flush();
                 out.close();
             } catch (FileNotFoundException e) {
                 throw new ServiceException("Writing to file failed " + e.getMessage());
