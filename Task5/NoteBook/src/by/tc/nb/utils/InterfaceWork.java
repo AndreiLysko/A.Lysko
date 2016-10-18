@@ -76,7 +76,7 @@ public class InterfaceWork {
 
         AddNoteRequest request = new AddNoteRequest();
         request.setCommandName("ADD_NEW_NOTE");
-        request.setData(content);
+        request.setNote(content);
         request.setCreationDate(date);
 
         Response response = controller.doRequest(request);

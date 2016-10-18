@@ -12,13 +12,13 @@ import java.util.ArrayList;
 public class NotebookServiceImpl implements NotebookService{
 
     @Override
-    public void addNote(String data, String creationDate) throws ServiceException {
+    public void addNote(int userID, String data) throws ServiceException {
 
-        if (data == null || creationDate == null || creationDate.isEmpty() || Validate.isDate(creationDate)){
+        if (data == null){
             throw new ServiceException("Incorrect parameters");
         }
 
-        Note note = new Note(data,creationDate);
+        Note note = new Note(data);
 
         NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
         notebook.getNotes().add(note);
@@ -84,102 +84,6 @@ public class NotebookServiceImpl implements NotebookService{
         return notes;
     }
 
-    @Override
-    public ArrayList<Note> loadNotebookFromFile(String filePath) throws ServiceException, IOException {
-
-        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        if(filePath.isEmpty()){
-            throw new ServiceException("WIncorrect parameter");
-        }
-        else{
-            File file = new File(filePath);
-            BufferedReader br = new BufferedReader(new FileReader(file));
-            String buffer;
-            String date = null;
-            String content = null;
-
-            while ((buffer = br.readLine()) != null) {
-                if (Validate.note(buffer)) {
-                    int i = 0;
-                    for (String noteText : buffer.split("  \\|\\|  ",2)) {
-                        if (i == 0) {
-                            date = noteText;
-                            i++;
-                        }
-                        else{
-                            content = noteText;
-                        }
-                    }
-                    Note note = new Note(content, date);
-                    notebook.getNotes().add(note);
-                }
-                else {
-                    System.out.println("Incorrect note format " + buffer);
-                }
-            }
-            br.close();
-        }
-        return notebook.getNotes();
-    }
-
-    @Override
-    public void writeNotebookToFile(String filePath) throws ServiceException, IOException {
-
-        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        if(filePath.isEmpty()){
-            throw new ServiceException("Incorrect parameter!");
-        }else {
-            FileWriter writer = new FileWriter(filePath);
-            for (Note note : notebook.getNotes()){
-                writer.write(note.toString());
-                writer.append("\n");
-            }
-            writer.close();
-        }
-    }
-
-    @Override
-    public void serializeNotebook(String filepath) throws ServiceException {
-        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        if (notebook.getNotes().isEmpty()){
-            throw new ServiceException("Notebook is empty");
-        }
-        else {
-            try {
-                FileOutputStream fos = new FileOutputStream(filepath);
-                ObjectOutputStream out = new ObjectOutputStream(fos);
-                out.writeObject(notebook);
-                out.flush();
-                out.close();
-            } catch (FileNotFoundException e) {
-                throw new ServiceException("Writing to file failed " + e.getMessage());
-            } catch (IOException e) {
-                throw new ServiceException("Writing to file failed " + e.getMessage());
-            }
-        }
-    }
-
-    @Override
-    public ArrayList<Note> deserializeNotebook(String filepath) throws ServiceException {
-        NoteBook notebook;
-        if (!(new File(filepath).exists())) {
-            throw new ServiceException("Incorrect filepath");
-        }
-        else {
-            try {
-                FileInputStream in = new FileInputStream(filepath);
-                ObjectInputStream oin = new ObjectInputStream(in);
-                notebook = (NoteBook) oin.readObject();
-                in.close();
-            } catch (IOException e) {
-                throw new ServiceException("Loading from file failed " + e.getMessage());
-            } catch (ClassNotFoundException e) {
-                throw new ServiceException("Error occured " + e.getMessage());
-            }
-        }
-        NoteBookProvider.getInstance().setNoteBook(notebook);
-        return notebook.getNotes();
-    }
 
     @Override
     public int login(String username, String password) throws ServiceException {

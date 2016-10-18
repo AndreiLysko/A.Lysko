@@ -5,15 +5,13 @@ import by.tc.nb.bean.entity.Note;
 import java.util.List;
 
 public class ClearNotebookRequest extends Request {
-    private List<Note> findBook;
+    private int userID;
 
-    public List<Note> getFindBook() {
-        return findBook;
+    public int getUserID() {
+        return userID;
     }
 
-    public void setFindBook(List<Note> findBook) {
-        this.findBook = findBook;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
-
-
 }

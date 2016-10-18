@@ -3,12 +3,17 @@ package by.tc.nb.bean;
 public class FindNoteByContentRequest extends Request {
 
     private String content;
+    private int userID;
 
     public FindNoteByContentRequest() {
     }
 
-    public FindNoteByContentRequest(String content) {
-        this.content = content;
+    public int getUserID() {
+        return userID;
+    }
+
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public String getContent() {

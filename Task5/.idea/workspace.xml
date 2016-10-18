@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task4/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task4/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/RegistrationRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/DeserializeNotebookRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/LoadNotebookFromFileRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/SerializeNotebookRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/WriteNotebookToFileRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNewNote.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/CreateNewNoteBook.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/DeserializeNotebook.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNotes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/LoadNotebookFromFile.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/SerializeNotebook.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/WriteNotebookToFile.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AddNoteRequest.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AddNoteRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ClearNotebookRequest.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ClearNotebookRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByContentRequest.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByContentRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByDateRequest.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByDateRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesRequest.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesResponse.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" />
     </list>
     <ignored path="Task5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +57,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddNoteRequest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AddNoteRequest.java">
+      <file leaf-file-name="AddNote.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Authorize.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotebookServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotebookService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -67,6 +119,18 @@
       <list>
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/entity/User.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AddNoteRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationResponse.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ClearNotebookRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByContentRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByDateRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/RegistrationRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesRequest.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesResponse.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" />
       </list>
     </option>
   </component>
@@ -192,7 +256,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,11 +278,85 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NoteBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NoteBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NoteBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exception" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -654,15 +792,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476796299405</updated>
-      <workItem from="1476796307871" duration="2266000" />
+      <workItem from="1476796307871" duration="4664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2266000" />
+    <option name="totallyTimeSpent" value="4664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -727,7 +865,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -739,10 +880,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AddNoteRequest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ClearNotebookRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByContentRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByDateRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByDateResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/RegistrationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/FindNoteByContentResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/exception/CommandException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNewNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNotes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>

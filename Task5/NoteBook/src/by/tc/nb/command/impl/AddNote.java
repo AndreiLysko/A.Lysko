@@ -22,11 +22,9 @@ public class AddNote implements Command {
             Response response = new Response();
             NotebookService nbService = ServiceFactory.getInstance().getNoteBookService();
 
-            String data = req.getData();
-            String creationDate = req.getCreationDate();
 
             try {
-                nbService.addNote(data,creationDate);
+                nbService.addNote(req.getUserID(),req.getNote());
             } catch (ServiceException e) {
                 response.setErrorStatus(true);
                 response.setErrorMessage(e.getMessage());

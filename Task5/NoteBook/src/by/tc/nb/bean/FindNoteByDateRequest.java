@@ -3,12 +3,14 @@ package by.tc.nb.bean;
 public class FindNoteByDateRequest extends Request {
 
     private String date;
+    private int userID;
 
-    public FindNoteByDateRequest() {
+    public int getUserID() {
+        return userID;
     }
 
-    public FindNoteByDateRequest(String date) {
-        this.date = date;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public String getDate() {
