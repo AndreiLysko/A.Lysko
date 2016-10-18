@@ -13,7 +13,7 @@ public class FindNoteByContent implements Command {
     public Response execute(Request request) throws CommandException {
         FindNoteByContentRequest req;
 
-        if(request instanceof DeserializeNotebookRequest) {
+        if(request instanceof FindNoteByContentRequest) {
 
             req = (FindNoteByContentRequest) request;
             String searchString = req.getContent();
@@ -21,7 +21,7 @@ public class FindNoteByContent implements Command {
             FindNoteByContentResponse response = new FindNoteByContentResponse();
 
             try {
-                nbService.findNoteByContent(searchString);
+                response.setNotes(nbService.findNoteByContent(searchString));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);

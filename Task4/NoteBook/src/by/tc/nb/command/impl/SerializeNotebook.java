@@ -13,7 +13,7 @@ import by.tc.nb.service.exception.ServiceException;
 public class SerializeNotebook implements Command {
 
     @Override
-    public Response execute(Request request) throws CommandException, ServiceException {
+    public Response execute(Request request) throws CommandException {
 
         if (request instanceof SerializeNotebookRequest) {
 
@@ -21,7 +21,7 @@ public class SerializeNotebook implements Command {
             Response response = new Response();
 
             try {
-                nbService.serializeNotebook(((SerializeNotebookRequest) request).getFilePath());
+                nbService.serializeNotebook(((SerializeNotebookRequest)request).getFilePath());
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);
@@ -30,8 +30,8 @@ public class SerializeNotebook implements Command {
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Notes have been successfully written to file ");
-            System.out.println(response.getResultMessage() + ((WriteNotebookToFileRequest)request).getFilePath());
+            response.setResultMessage("Notes have been successfully written to file " +
+                    ((SerializeNotebookRequest) request).getFilePath());
             return response;
         } else {
             throw new CommandException("Incorrect request");

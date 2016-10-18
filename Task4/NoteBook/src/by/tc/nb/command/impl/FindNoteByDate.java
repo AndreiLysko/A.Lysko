@@ -13,7 +13,7 @@ public class FindNoteByDate implements Command {
     public Response execute(Request request) throws CommandException {
         FindNoteByDateRequest req;
 
-        if(request instanceof DeserializeNotebookRequest) {
+        if(request instanceof FindNoteByDateRequest) {
 
             req = (FindNoteByDateRequest) request;
             String searchDate = req.getDate();
@@ -21,7 +21,7 @@ public class FindNoteByDate implements Command {
             FindNoteByDateResponse response = new FindNoteByDateResponse();
 
             try {
-                nbService.findNoteByDate(searchDate);
+                response.setNotes(nbService.findNoteByDate(searchDate));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);

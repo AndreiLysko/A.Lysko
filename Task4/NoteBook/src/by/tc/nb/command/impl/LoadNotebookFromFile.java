@@ -3,14 +3,11 @@ package by.tc.nb.command.impl;
 import by.tc.nb.bean.LoadNotebookFromFileRequest;
 import by.tc.nb.bean.Request;
 import by.tc.nb.bean.Response;
-import by.tc.nb.bean.entity.NoteBook;
 import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
 import by.tc.nb.service.NotebookService;
 import by.tc.nb.service.ServiceFactory;
 import by.tc.nb.service.exception.ServiceException;
-import by.tc.nb.source.NoteBookProvider;
-import by.tc.nb.utils.NBUtilities;
 
 import java.io.IOException;
 
@@ -38,8 +35,7 @@ public class LoadNotebookFromFile implements Command {
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Notes have been successfully read");
-            System.out.println(response.getResultMessage());
+            response.setResultMessage("Notes have been successfully loaded");
             return response;
 
         }

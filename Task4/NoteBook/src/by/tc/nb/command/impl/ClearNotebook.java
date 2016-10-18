@@ -29,7 +29,6 @@ public class ClearNotebook implements Command {
 
             response.setErrorStatus(false);
             response.setResultMessage("Notebook has been successfully cleared!");
-
             return response;
         }
         else {

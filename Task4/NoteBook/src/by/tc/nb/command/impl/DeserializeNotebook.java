@@ -13,7 +13,7 @@ import by.tc.nb.service.exception.ServiceException;
 public class DeserializeNotebook implements Command {
 
     @Override
-    public Response execute(Request request) throws CommandException, ServiceException {
+    public Response execute(Request request) throws CommandException{
 
         if(request instanceof DeserializeNotebookRequest) {
 
@@ -30,8 +30,8 @@ public class DeserializeNotebook implements Command {
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Notes have been successfully written to file ");
-            System.out.println(response.getResultMessage() + ((WriteNotebookToFileRequest)request).getFilePath());
+            response.setResultMessage("Notes have been successfully deserialized from file " +
+                    ((DeserializeNotebookRequest) request).getFilePath());
             return response;
         } else {
             throw new CommandException("Incorrect request");

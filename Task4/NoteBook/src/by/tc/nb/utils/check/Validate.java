@@ -45,14 +45,4 @@ public class Validate {
         }
     }
 
-    public static boolean isFile(String filepath) {
-
-        File file = new File(filepath);
-        if (!file.exists() || !file.canRead() || !file.canWrite()) {
-            return false;
-        } else if (file.isDirectory()) {
-            return false;
-        }
-        return true;
-    }
 }

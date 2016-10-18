@@ -1,8 +1,9 @@
 package by.tc.nb.bean.entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class NoteBook {
+public class NoteBook implements Serializable{
 
     ArrayList<Note> notes = new ArrayList<Note>();
 

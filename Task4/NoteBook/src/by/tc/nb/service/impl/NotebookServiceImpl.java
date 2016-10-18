@@ -37,10 +37,7 @@ public class NotebookServiceImpl implements NotebookService{
     public void viewNotes() throws ServiceException {
 
         NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        if (notebook.getNotes().isEmpty()){
-            System.out.println("Notebook is empty");
-        }
-        else {
+        if (!notebook.getNotes().isEmpty()){
             System.out.println("Notebook contains :");
             notebook.getNotes().stream().forEach(note -> System.out.println(note));
         }
@@ -145,9 +142,6 @@ public class NotebookServiceImpl implements NotebookService{
     @Override
     public void serializeNotebook(String filepath) throws ServiceException {
         NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        if(!Validate.isFile(filepath)){
-            throw new ServiceException("Incorrect filepath");
-        }
         if (notebook.getNotes().isEmpty()){
             throw new ServiceException("Notebook is empty");
         }
@@ -156,8 +150,6 @@ public class NotebookServiceImpl implements NotebookService{
                 FileOutputStream fos = new FileOutputStream(filepath);
                 ObjectOutputStream out = new ObjectOutputStream(fos);
                 out.writeObject(notebook);
-
-                System.out.println("Access writing to file!");
                 out.close();
             } catch (FileNotFoundException e) {
                 throw new ServiceException("Writing to file failed " + e.getMessage());
@@ -170,7 +162,7 @@ public class NotebookServiceImpl implements NotebookService{
     @Override
     public ArrayList<Note> deserializeNotebook(String filepath) throws ServiceException {
         NoteBook notebook;
-        if (!Validate.isFile(filepath)) {
+        if (!(new File(filepath).exists())) {
             throw new ServiceException("Incorrect filepath");
         }
         else {
