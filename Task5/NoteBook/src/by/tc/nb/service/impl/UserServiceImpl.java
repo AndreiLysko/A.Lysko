@@ -1,6 +1,7 @@
 package by.tc.nb.service.impl;
 
 import by.tc.nb.bean.entity.User;
+import by.tc.nb.dao.UserDAOFactory;
 import by.tc.nb.dao.exception.DAOException;
 import by.tc.nb.service.UserService;
 import by.tc.nb.service.exception.ServiceException;
@@ -14,7 +15,7 @@ public class UserServiceImpl implements UserService {
         }
 
         try {
-            return DAOFactory.getInstance().getUserDAO().logination(login, password);
+            return UserDAOFactory.getInstance().getUserDAO().authorization()
         } catch (DAOException e) {
             throw new ServiceException(e.getMessage());
         }

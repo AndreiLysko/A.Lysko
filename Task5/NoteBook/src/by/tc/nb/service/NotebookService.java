@@ -18,7 +18,4 @@ public interface NotebookService {
 
     ArrayList<Note> findNoteByDate(String searchDate) throws ServiceException;
 
-    int login(String username, String password) throws ServiceException;
-
-    boolean registration (String username, String password) throws ServiceException;
 }

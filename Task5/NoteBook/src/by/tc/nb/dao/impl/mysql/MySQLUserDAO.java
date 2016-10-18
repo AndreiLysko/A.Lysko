@@ -11,7 +11,7 @@ import by.tc.nb.dao.impl.pool.ConnectionPool;
 public class MySQLUserDAO implements UserDAO {
 
 	@Override
-	public boolean logination(String login, String password) throws DAOException {
+	public boolean authorization(String login, String password) throws DAOException {
 		// TODO Auto-generated method stub
 		Connection con = null;
 		Statement st = null;

@@ -8,6 +8,7 @@ import by.tc.nb.bean.entity.User;
 import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
 import by.tc.nb.service.ServiceFactory;
+import by.tc.nb.service.UserService;
 import by.tc.nb.service.exception.ServiceException;
 
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class Authorize implements Command {
             String username = req.getUsername();
             String password = req.getPassword();
 
-            UserService userService = ServiceFactory.getInstance().getUserService();
+            UserService userService = ServiceFactory.getInstance().
 
             try {
                 currentUser = userService.logination(username, password);

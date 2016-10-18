@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/UserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/source/NoteBookProvider.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAOFactory.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAOFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAO.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAO.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/impl/mysql/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/impl/mysql/MySQLUserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java" />
     </list>
     <ignored path="Task5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,76 +37,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AddNote.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java">
+      <file leaf-file-name="NoteBookDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Authorize.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+            <state relative-caret-position="204">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NoteBookDAOFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAOFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDAOFactory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotebookServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -115,8 +52,8 @@
       <file leaf-file-name="NotebookService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+            <state relative-caret-position="255">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -153,14 +90,16 @@
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/RegistrationRequest.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesRequest.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/ViewNotesResponse.java" />
-        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/AddNote.java" />
-        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/UserService.java" />
-        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAOFactory.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAO.java" />
       </list>
     </option>
   </component>
@@ -1000,12 +939,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476796299405</updated>
-      <workItem from="1476796307871" duration="5454000" />
+      <workItem from="1476796307871" duration="6303000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5454000" />
+    <option name="totallyTimeSpent" value="6303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -1243,18 +1182,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java">
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+        <state relative-caret-position="136">
+          <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/NotebookServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="-597">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1263,14 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1287,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        <state relative-caret-position="289">
+          <caret line="17" column="75" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1303,11 +1252,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java">
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/NotebookService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/NoteBookDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
