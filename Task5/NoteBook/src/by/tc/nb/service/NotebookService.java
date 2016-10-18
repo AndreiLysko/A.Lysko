@@ -5,17 +5,15 @@ import by.tc.nb.service.exception.ServiceException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public interface NotebookService {
 
-    void addNote(int userID, String data) throws ServiceException;
+    void addNote(int userID, String note);
+    void clearNotebook(int userID);
 
-    void clearNotebook() throws ServiceException;
-
-    void viewNotes() throws ServiceException;
-
-    ArrayList<Note> findNoteByContent(String searchString) throws ServiceException;
-
-    ArrayList<Note> findNoteByDate(String searchDate) throws ServiceException;
+    List<Note> findNoteByContent(int userID, String content);
+    List<Note> findNoteByDate(int userID, String date);
+    List<Note> viewNotes(int userID);
 
 }
