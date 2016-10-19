@@ -2,6 +2,7 @@ package by.tc.nb.utils;
 
 import by.tc.nb.bean.*;
 import by.tc.nb.bean.entity.Note;
+import by.tc.nb.bean.entity.User;
 import by.tc.nb.controller.Controller;
 
 import java.text.SimpleDateFormat;
@@ -15,6 +16,7 @@ public class InterfaceWork {
 
     private static final Controller controller = new Controller();
     private static final Scanner sc = new Scanner(in);
+    private static int sessionId;
     private static final String operations =    "Choose operation: \n"+
                                                 "1. Add note \n" +
                                                 "2. Find note by content \n" +
@@ -68,8 +70,21 @@ public class InterfaceWork {
         }
     }
 
-    private static void authorization(){
-
+    private static void authorization() {
+        AuthorizationRequest request = new AuthorizationRequest();
+        System.out.println("Login: ");
+        String username = sc.nextLine();
+        System.out.println("Password: ");
+        String password = sc.nextLine();
+        request.setCommandName("AUTHORIZATION");
+        request.setPassword(password);
+        request.setUsername(username);
+        AuthorizationResponse response = (AuthorizationResponse) controller.doRequest(request);
+        if (response.isErrorStatus() == false) {
+            User currentUser = response.getUser();
+            sessionId = currentUser.getId();
+            System.out.println("Welcome , " + currentUser.getLogin() + "!");
+        }
     }
 
     private static void registration(){
@@ -86,6 +101,7 @@ public class InterfaceWork {
             System.out.println("Registration successful");
         }
     }
+
     private static void addNote(){
         System.out.println("Input your note:");
 
@@ -95,7 +111,7 @@ public class InterfaceWork {
         AddNoteRequest request = new AddNoteRequest();
         request.setCommandName("ADD_NEW_NOTE");
         request.setNote(content);
-        request.setCreationDate(date);
+        request.setUserID(sessionId);
 
         Response response = controller.doRequest(request);
         if(response.isErrorStatus()){
