@@ -1,6 +1,8 @@
 package by.tc.nb.dao.impl.pool;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.JDBCType;
 import java.sql.SQLException;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -8,14 +10,24 @@ import java.util.concurrent.BlockingQueue;
 public class ConnectionPool {
 	private static final ConnectionPool instance = new ConnectionPool();
 	
-	private BlockingQueue<Connection> pool = new ArrayBlockingQueue<>(5);
+	private BlockingQueue<Connection> pool = new ArrayBlockingQueue<>(3);
 	
 	private ConnectionPool(){
-		// load driver
-		
-		// for()
-		
-	}
+
+		String url = "jdbc:mysql://localhost:3306/notebookdb?useSSL=false";
+		String username = "root";
+		String password = "root";
+
+		try {
+            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+            for(int index = 0; index < pool.remainingCapacity(); index++) {
+                pool.add(DriverManager.getConnection(url,username,password));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
 	
 	
 	public Connection getConnection() throws InterruptedException{
@@ -27,7 +39,6 @@ public class ConnectionPool {
 			return;
 		}
 		connection.setAutoCommit(true);
-		connection.setReadOnly(true);
 		
 		pool.put(connection);
 	}
@@ -41,9 +52,7 @@ public class ConnectionPool {
 			} catch (SQLException e) {
 			}
 		}
-		
 	}
-	
 	
 	public static ConnectionPool getInstance(){
 		return instance;

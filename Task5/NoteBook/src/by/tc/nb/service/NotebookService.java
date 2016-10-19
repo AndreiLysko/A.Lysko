@@ -9,11 +9,11 @@ import java.util.List;
 
 public interface NotebookService {
 
-    void addNote(int userID, String note);
-    void clearNotebook(int userID);
+    void addNote(int userID, String note) throws ServiceException;
+    void clearNotebook(int userID) throws ServiceException;
 
-    List<Note> findNoteByContent(int userID, String content);
-    List<Note> findNoteByDate(int userID, String date);
-    List<Note> viewNotes(int userID);
+    List<Note> findNoteByContent(int userID, String content) throws ServiceException;
+    List<Note> findNoteByDate(int userID, String date) throws ServiceException;
+    List<Note> viewNotes(int userID) throws ServiceException;
 
 }

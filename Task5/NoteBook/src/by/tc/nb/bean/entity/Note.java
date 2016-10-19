@@ -1,6 +1,8 @@
 package by.tc.nb.bean.entity;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Note implements Serializable   {
 
@@ -8,6 +10,11 @@ public class Note implements Serializable   {
     private String data;
 
     public Note() {
+    }
+
+    public Note(String data) {
+        this.data = data;
+        this.creationDate = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
     }
 
     public Note(String data, String creationDate) {

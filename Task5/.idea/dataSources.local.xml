@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - @localhost" uuid="826217de-587d-4e56-be44-7e7a74abf3b9">
+    <data-source name="MySQL - notebookdb@localhost" uuid="cce42a52-646a-4892-91e1-f4e53621fb9e">
       <database-info product="MySQL" version="5.7.16-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -9,7 +9,8 @@
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <resolve-scope>:</resolve-scope>
+      <resolve-scope>world:|information_schema:|performance_schema:|sakila:|mysql:|notebookdb:*|sys:</resolve-scope>
+      <legacy-introspector>true</legacy-introspector>
     </data-source>
   </component>
 </project>

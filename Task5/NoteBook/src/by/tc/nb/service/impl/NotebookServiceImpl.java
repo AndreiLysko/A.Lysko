@@ -1,97 +1,85 @@
 package by.tc.nb.service.impl;
 
 import by.tc.nb.bean.entity.Note;
+import by.tc.nb.dao.NoteBookDAOFactory;
+import by.tc.nb.dao.exception.DAOException;
 import by.tc.nb.service.NotebookService;
 import by.tc.nb.service.exception.ServiceException;
-import by.tc.nb.source.NoteBookProvider;
 import by.tc.nb.utils.check.Validate;
 
-import java.io.*;
-import java.util.ArrayList;
+import java.util.List;
 
 public class NotebookServiceImpl implements NotebookService{
 
-    @Override
-    public void addNote(int userID, String data) throws ServiceException {
 
-        if (data == null){
+    @Override
+    public void addNote(int userID, String note) throws ServiceException {
+
+        if(!Validate.note(userID, note)) {
             throw new ServiceException("Incorrect parameters");
         }
 
-        Note note = new Note(data);
-
-        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        notebook.getNotes().add(note);
-    }
-
-    @Override
-    public void clearNotebook() throws ServiceException {
-
-        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        notebook.getNotes().clear();
-
-    }
-
-    @Override
-    public void viewNotes() throws ServiceException {
-
-        NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-        if (!notebook.getNotes().isEmpty()){
-            System.out.println("Notebook contains :");
-            notebook.getNotes().stream().forEach(note -> System.out.println(note));
+        try {
+            NoteBookDAOFactory.getInstance().getNoteBookDAO().addNote(userID,new Note(note));
+        } catch (DAOException e) {
+            throw new ServiceException(e.getMessage());
         }
-
     }
 
     @Override
-    public ArrayList<Note> findNoteByContent(String searchData) throws ServiceException {
+    public void clearNotebook(int userID) throws ServiceException {
 
-        ArrayList<Note> notes = new ArrayList<>();
-
-        if (searchData.isEmpty()){
+        if(userID < 0) {
             throw new ServiceException("Incorrect parameters");
         }
-        else {
-            NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-            notebook.getNotes().stream().forEach(note -> {
-                if (Validate.content(searchData, note)) {
-                    notes.add(note);
-                }
-            });
+
+        try {
+            NoteBookDAOFactory.getInstance().getNoteBookDAO().clearNotebook(userID);
+        } catch (DAOException e) {
+            throw new ServiceException(e.getMessage());
         }
-        return notes;
+
     }
 
     @Override
-    public ArrayList<Note> findNoteByDate(String searchDate) throws ServiceException {
+    public List<Note> findNoteByContent(int userID, String content) throws ServiceException {
 
-        ArrayList<Note> notes = new ArrayList<>();
-
-        if (searchDate.isEmpty()){
+        if(!Validate.note(userID, content)) {
             throw new ServiceException("Incorrect parameters");
         }
-        else {
 
-            NoteBook notebook = NoteBookProvider.getInstance().getNoteBook();
-            if (!notebook.getNotes().isEmpty()) {
-                notebook.getNotes().stream().forEach(note -> {
-                    if (Validate.date(searchDate, note)) {
-                        notes.add(note);
-                    }
-                });
-            }
+        try {
+            return NoteBookDAOFactory.getInstance().getNoteBookDAO().findNoteByContent(userID, content);
+        } catch (DAOException e) {
+            throw new ServiceException(e.getMessage());
         }
-        return notes;
-    }
-
-
-    @Override
-    public int login(String username, String password) throws ServiceException {
-        return 0;
     }
 
     @Override
-    public boolean registration(String username, String password) throws ServiceException {
-        return false;
+    public List<Note> findNoteByDate(int userID, String date) throws ServiceException {
+
+        if(!Validate.note(userID, date)) {
+            throw new ServiceException("Incorrect parameters");
+        }
+
+        try {
+            return NoteBookDAOFactory.getInstance().getNoteBookDAO().findNoteByDate(userID, date);
+        } catch (DAOException e) {
+            throw new ServiceException(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<Note> viewNotes(int userID) throws ServiceException {
+
+        if(userID < 0) {
+            throw new ServiceException("Incorrect parameters");
+        }
+
+        try {
+            return NoteBookDAOFactory.getInstance().getNoteBookDAO().viewNotes(userID);
+        } catch (DAOException e) {
+            throw new ServiceException(e.getMessage());
+        }
     }
 }

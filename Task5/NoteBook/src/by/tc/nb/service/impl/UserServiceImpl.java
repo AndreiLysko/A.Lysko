@@ -5,32 +5,33 @@ import by.tc.nb.dao.UserDAOFactory;
 import by.tc.nb.dao.exception.DAOException;
 import by.tc.nb.service.UserService;
 import by.tc.nb.service.exception.ServiceException;
+import by.tc.nb.utils.check.Validate;
 
 public class UserServiceImpl implements UserService {
 
     @Override
-    public User authorization(String login, String password) throws ServiceException {
-        if(login == null || login.equals("") || password == null || password.equals("")) {
-            throw new ServiceException("Illegal parameters");
+    public User authorization(String username, String password) throws ServiceException {
+        if(!Validate.loginParameters(username, password)) {
+            throw new ServiceException("Incorrect parameters");
         }
 
         try {
-            return UserDAOFactory.getInstance().getUserDAO().authorization()
+            return UserDAOFactory.getInstance().getUserDAO().authorization(username, password);
         } catch (DAOException e) {
-            throw new ServiceException(e.getMessage());
+            throw new ServiceException("authorization failed " + e.getMessage());
         }
     }
 
     @Override
-    public boolean registration(String login, String password) throws ServiceException {
-        if(login == null || login.equals("") || password == null || password.equals("")) {
-            throw new ServiceException("Illegal parameters");
+    public boolean registration(String username, String password) throws ServiceException {
+        if(!Validate.loginParameters(username, password)) {
+            throw new ServiceException("Incorrect parameters");
         }
 
         try {
-            return DAOFactory.getInstance().getUserDAO().registration(login, password);
+            return UserDAOFactory.getInstance().getUserDAO().registration(username, password);
         } catch (DAOException e) {
-            throw new ServiceException(e.getMessage());
+            throw new ServiceException("registry failed " + e.getMessage());
         }
     }
 }
