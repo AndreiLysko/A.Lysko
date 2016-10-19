@@ -16,6 +16,7 @@ public class Controller {
     }
 
     public Response doRequest(Request request)  {
+
         String commandName = request.getCommandName();
         Command command = helper.getCommand(commandName);
         Response response;
@@ -26,10 +27,6 @@ public class Controller {
             response = new Response();
             response.setErrorStatus(true);
             response.setErrorMessage("Error occured");
-        } catch (IOException e) {
-            response = new Response();
-            response.setErrorStatus(true);
-            response.setErrorMessage("File error");
         }
         return response;
 

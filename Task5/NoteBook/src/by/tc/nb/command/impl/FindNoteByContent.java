@@ -16,12 +16,11 @@ public class FindNoteByContent implements Command {
         if(request instanceof FindNoteByContentRequest) {
 
             req = (FindNoteByContentRequest) request;
-            String searchString = req.getContent();
             NotebookService nbService = ServiceFactory.getInstance().getNoteBookService();
             FindNoteByContentResponse response = new FindNoteByContentResponse();
 
             try {
-                response.setNotes(nbService.findNoteByContent(searchString));
+                response.setNotes(nbService.findNoteByContent(req.getUserID(),req.getContent()));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);

@@ -17,10 +17,8 @@ public class CommandHelper {
         commands.put("CLEAR_NOTEBOOK", new ClearNotebook());
         commands.put("FIND_NOTE_BY_CONTENT", new FindNoteByContent());
         commands.put("FIND_NOTE_BY_DATE", new FindNoteByDate());
-        commands.put("LOAD_NOTEBOOK_FROM_FILE", new LoadNotebookFromFile());
-        commands.put("WRITE_NOTEBOOK_TO_FILE", new WriteNotebookToFile());
-        commands.put("SERIALIZE_NOTEBOOK", new SerializeNotebook());
-        commands.put("DESERIALIZE_NOTEBOOK", new DeserializeNotebook());
+        commands.put("AUTHORIZATION", new Authorize());
+        commands.put("REGISTRATION", new Register());
 
     }
 

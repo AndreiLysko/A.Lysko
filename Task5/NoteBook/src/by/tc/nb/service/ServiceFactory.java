@@ -18,4 +18,8 @@ public class ServiceFactory {
     public NotebookService getNoteBookService(){
         return nbService;
     }
+
+    public UserService getUserService() {
+        return userService;
+    }
 }

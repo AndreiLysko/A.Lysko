@@ -9,20 +9,22 @@ import by.tc.nb.command.exception.CommandException;
 import by.tc.nb.service.NotebookService;
 import by.tc.nb.service.ServiceFactory;
 import by.tc.nb.service.exception.ServiceException;
-import by.tc.nb.source.NoteBookProvider;
 
 public class ViewNotes implements Command {
 
     @Override
     public Response execute(Request request) throws CommandException {
 
+        ViewNotesRequest req;
+
         if (request instanceof ViewNotesRequest) {
 
+            req = (ViewNotesRequest) request;
             ViewNotesResponse response = new ViewNotesResponse();
             NotebookService nbService = ServiceFactory.getInstance().getNoteBookService();
 
             try {
-                nbService.viewNotes();
+                response.setNotes(nbService.viewNotes(req.getUserID()));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);
@@ -30,7 +32,6 @@ public class ViewNotes implements Command {
                 return response;
             }
 
-            response.setNotes(NoteBookProvider.getInstance().getNoteBook().getNotes());
             response.setErrorStatus(false);
             response.setResultMessage("Viewing all notes:");
             return response;

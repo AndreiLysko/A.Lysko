@@ -5,7 +5,7 @@ import by.tc.nb.service.exception.ServiceException;
 
 public interface UserService {
 
-    User authorization(String login, String password) throws ServiceException;
+    User authorization(String username, String password) throws ServiceException;
 
-    boolean registration(String login, String password) throws ServiceException;
+    boolean registration(String username, String password) throws ServiceException;
 }

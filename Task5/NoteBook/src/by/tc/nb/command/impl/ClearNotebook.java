@@ -14,13 +14,16 @@ public class ClearNotebook implements Command {
     @Override
     public Response execute(Request request) throws CommandException {
 
+        ClearNotebookRequest req;
+
         if (request instanceof ClearNotebookRequest){
 
+            req = (ClearNotebookRequest) request;
             Response response = new Response();
             NotebookService nbService = ServiceFactory.getInstance().getNoteBookService();
 
             try {
-                nbService.clearNotebook();
+                nbService.clearNotebook(req.getUserID());
             } catch (ServiceException e) {
                 response.setErrorStatus(true);
                 response.setErrorMessage(e.getMessage());

@@ -16,12 +16,11 @@ public class FindNoteByDate implements Command {
         if(request instanceof FindNoteByDateRequest) {
 
             req = (FindNoteByDateRequest) request;
-            String searchDate = req.getDate();
             NotebookService nbService = ServiceFactory.getInstance().getNoteBookService();
             FindNoteByDateResponse response = new FindNoteByDateResponse();
 
             try {
-                response.setNotes(nbService.findNoteByDate(searchDate));
+                response.setNotes(nbService.findNoteByDate(req.getUserID(),req.getDate()));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);

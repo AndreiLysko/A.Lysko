@@ -8,5 +8,5 @@ import by.tc.nb.service.exception.ServiceException;
 import java.io.IOException;
 
 public interface Command {
-    Response execute(Request request) throws CommandException, IOException;
+    Response execute(Request request) throws CommandException;
 }
