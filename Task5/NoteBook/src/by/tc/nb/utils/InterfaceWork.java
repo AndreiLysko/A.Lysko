@@ -4,6 +4,9 @@ import by.tc.nb.bean.*;
 import by.tc.nb.bean.entity.Note;
 import by.tc.nb.bean.entity.User;
 import by.tc.nb.controller.Controller;
+import by.tc.nb.service.NotebookService;
+import by.tc.nb.service.ServiceFactory;
+import by.tc.nb.service.exception.ServiceException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -33,46 +36,57 @@ public class InterfaceWork {
     public static void start() {
 
         while (true) {
+            System.out.println(startMenu);
             String mainMenuChoice = sc.nextLine();
             switch (mainMenuChoice){
                 case "1":
                     registration();
                     continue;
                 case "2":
-                    authorization();
-                    while (true){
-                        String subMenuChoice = sc.nextLine();
-                        switch (subMenuChoice) {
-                            case "1":
-                                addNote();
-                                break;
-                            case "2":
-                                findNoteByContent();
-                                break;
-                            case "3":
-                                findNoteByDate();
-                                break;
-                            case "4":
-                                viewNotes();
-                                break;
-                            case "5":
-                                clearNoteBook();
-                                break;
-                            case "0":
-                                System.exit(0);
-                            default:
-                                System.out.println("Incorrectly inputted command. Try again: ");
-                                break;
+                    if(!authorization()) {
+                        System.out.println("Incorrect username or password");
+                    }
+                    else {
+                        while (true) {
+                            System.out.println(operations);
+                            String subMenuChoice = sc.nextLine();
+                            switch (subMenuChoice) {
+                                case "1":
+                                    addNote();
+                                    break;
+                                case "2":
+                                    findNoteByContent();
+                                    break;
+                                case "3":
+                                    findNoteByDate();
+                                    break;
+                                case "4":
+                                    viewNotes();
+                                    break;
+                                case "5":
+                                    clearNoteBook();
+                                    break;
+                                case "0":
+                                    System.exit(0);
+                                default:
+                                    System.out.println("Incorrectly inputted command. Try again: ");
+                                    break;
+                            }
                         }
                     }
+                case "0":
+                    System.exit(0);
+                default:
+                    System.out.println("Incorrectly inputted command. Try again: ");
+                    break;
             }
 
         }
     }
 
-    private static void authorization() {
+    private static boolean authorization() {
         AuthorizationRequest request = new AuthorizationRequest();
-        System.out.println("Login: ");
+        System.out.println("Username: ");
         String username = sc.nextLine();
         System.out.println("Password: ");
         String password = sc.nextLine();
@@ -80,10 +94,15 @@ public class InterfaceWork {
         request.setPassword(password);
         request.setUsername(username);
         AuthorizationResponse response = (AuthorizationResponse) controller.doRequest(request);
-        if (response.isErrorStatus() == false) {
-            User currentUser = response.getUser();
-            sessionId = currentUser.getId();
-            System.out.println("Welcome , " + currentUser.getLogin() + "!");
+        if (response.isErrorStatus()) {
+            System.out.println(response.getErrorMessage());
+            return false;
+        }
+        else{
+            User user = response.getUser();
+            sessionId = user.getId();
+            System.out.println("Welcome , " + user.getUsername() + "!");
+            return true;
         }
     }
 
@@ -94,9 +113,9 @@ public class InterfaceWork {
         registrationRequest.setUsername(sc.nextLine());
         System.out.println("Password: ");
         registrationRequest.setPassword(sc.nextLine());
-        Response registrationResponce = controller.doRequest(registrationRequest);
-        if (registrationResponce.isErrorStatus()) {
-            System.out.println(registrationResponce.getErrorMessage());
+        Response response = controller.doRequest(registrationRequest);
+        if (response.isErrorStatus()) {
+            System.out.println(response.getErrorMessage());
         } else {
             System.out.println("Registration successful");
         }
@@ -106,7 +125,6 @@ public class InterfaceWork {
         System.out.println("Input your note:");
 
         String content = new Scanner(in).nextLine();
-        String date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
 
         AddNoteRequest request = new AddNoteRequest();
         request.setCommandName("ADD_NEW_NOTE");
@@ -142,60 +160,68 @@ public class InterfaceWork {
 
 
     private static void findNoteByContent(){
-        if (!NoteBookProvider.getInstance().getNoteBook().getNotes().isEmpty()) {
-            System.out.println("Input search content:");
+        try {
+            if (!ServiceFactory.getInstance().getNoteBookService().viewNotes(sessionId).isEmpty()) {
+                System.out.println("Input search content:");
 
-            String content = new Scanner(in).nextLine();
+                String content = new Scanner(in).nextLine();
 
-            FindNoteByContentRequest request = new FindNoteByContentRequest();
-            request.setCommandName("FIND_NOTE_BY_CONTENT");
-            request.setContent(content);
+                FindNoteByContentRequest request = new FindNoteByContentRequest();
+                request.setCommandName("FIND_NOTE_BY_CONTENT");
+                request.setContent(content);
 
-            FindNoteByContentResponse response = (FindNoteByContentResponse) controller.doRequest(request);
-            List<Note> notesFound = response.getNotes();
+                FindNoteByContentResponse response = (FindNoteByContentResponse) controller.doRequest(request);
+                List<Note> notesFound = response.getNotes();
 
-            System.out.println("Searching " + content);
-            if (!notesFound.isEmpty()) {
-                System.out.println(response.getResultMessage());
-                notesFound.stream().forEach(note -> System.out.println(note));
-            } else {
-                System.out.println("No notes have been found");
+                System.out.println("Searching " + content);
+                if (!notesFound.isEmpty()) {
+                    System.out.println(response.getResultMessage());
+                    notesFound.stream().forEach(note -> System.out.println(note));
+                } else {
+                    System.out.println("No notes have been found");
+                }
+                if (response.isErrorStatus()) {
+                    System.out.println(response.getErrorMessage());
+                }
             }
-            if (response.isErrorStatus()) {
-                System.out.println(response.getErrorMessage());
+            else {
+                System.out.println("Notebook is empty");
             }
-        }
-        else {
-            System.out.println("Notebook is empty");
+        } catch (ServiceException e) {
+            e.printStackTrace();
         }
     }
 
     private static void findNoteByDate(){
-        if (!NoteBookProvider.getInstance().getNoteBook().getNotes().isEmpty()) {
-            System.out.println("Input search date:");
+        try {
+            if (!ServiceFactory.getInstance().getNoteBookService().viewNotes(sessionId).isEmpty()) {
+                System.out.println("Input search date:");
 
-            String date = new Scanner(in).nextLine();
+                String date = new Scanner(in).nextLine();
 
-            FindNoteByDateRequest request = new FindNoteByDateRequest();
-            request.setCommandName("FIND_NOTE_BY_DATE");
-            request.setDate(date);
+                FindNoteByDateRequest request = new FindNoteByDateRequest();
+                request.setCommandName("FIND_NOTE_BY_DATE");
+                request.setDate(date);
 
-            FindNoteByDateResponse response = (FindNoteByDateResponse) controller.doRequest(request);
-            List<Note> notesFound = response.getNotes();
+                FindNoteByDateResponse response = (FindNoteByDateResponse) controller.doRequest(request);
+                List<Note> notesFound = response.getNotes();
 
-            System.out.println("Searching " + date);
-            if (!notesFound.isEmpty()) {
-                System.out.println(response.getResultMessage());
-                notesFound.stream().forEach(note -> System.out.println(note));
-            } else {
-                System.out.println("No notes have been found for that date");
+                System.out.println("Searching " + date);
+                if (!notesFound.isEmpty()) {
+                    System.out.println(response.getResultMessage());
+                    notesFound.stream().forEach(note -> System.out.println(note));
+                } else {
+                    System.out.println("No notes have been found for that date");
+                }
+                if (response.isErrorStatus()) {
+                    System.out.println(response.getErrorMessage());
+                }
             }
-            if (response.isErrorStatus()) {
-                System.out.println(response.getErrorMessage());
+            else {
+                System.out.println("Notebook is empty");
             }
-        }
-        else {
-            System.out.println("Notebook is empty");
+        } catch (ServiceException e) {
+            e.printStackTrace();
         }
     }
 

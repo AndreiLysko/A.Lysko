@@ -3,19 +3,19 @@ package by.tc.nb.bean.entity;
 public class User {
 
     private final int id;
-    private final String login;
+    private final String username;
 
-    public User(int id, String login) {
+    public User(int id, String username) {
         this.id = id;
-        this.login = login;
+        this.username = username;
     }
 
     public int getId() {
         return id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
     }
 
     @Override
@@ -26,19 +26,19 @@ public class User {
         User user = (User) o;
 
         if (id != user.id) return false;
-        return login != null ? login.equals(user.login) : user.login == null;
+        return username != null ? username.equals(user.username) : user.username == null;
 
     }
 
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (login != null ? login.hashCode() : 0);
+        result = 31 * result + (username != null ? username.hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return this.getClass().getName() + "[id=" + id + ", login=" + login + "]\n";
+        return this.getClass().getName() + "[id=" + id + ", username=" + username + "]\n";
     }
 }
