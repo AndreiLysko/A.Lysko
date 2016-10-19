@@ -3,75 +3,93 @@ package by.tc.nb.utils;
 import by.tc.nb.bean.*;
 import by.tc.nb.bean.entity.Note;
 import by.tc.nb.controller.Controller;
-import by.tc.nb.source.NoteBookProvider;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.System.in;
+
 public class InterfaceWork {
 
     private static final Controller controller = new Controller();
-    private static final Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(in);
+    private static final String operations =    "Choose operation: \n"+
+                                                "1. Add note \n" +
+                                                "2. Find note by content \n" +
+                                                "3. Find note by date \n" +
+                                                "4. Show all notes \n" +
+                                                "5. Clear Notebook \n" +
+                                                "0. Exit";
+    private static final String startMenu ="-=Notebook v 1.03=- \n" +
+            "Input command: \n" +
+            "1. Registration \n" +
+            "2. Authorization \n" +
+            "0. Exit \n";
 
     public static void start() {
-        System.out.println("-=Notebook v1.01=-\n" +
-                            "Choose operation: \n"+
-                            "1. Add note \n" +
-                            "2. Find note by content \n" +
-                            "3. Find note by date \n" +
-                            "4. Show all notes \n" +
-                            "5. Clear Notebook \n" +
-                            "6. Load notes from file \n" +
-                            "7. Write note to file \n"  +
-                            "8. Serialize Notebook \n"  +
-                            "9. Deserialize Notebook \n"  +
-                            "0. Exit");
 
         while (true) {
-            String choice = sc.nextLine();
-            switch (choice) {
+            String mainMenuChoice = sc.nextLine();
+            switch (mainMenuChoice){
                 case "1":
-                    addNote();
-                    break;
+                    registration();
+                    continue;
                 case "2":
-                    findNoteByContent();
-                    break;
-                case "3":
-                    findNoteByDate();
-                    break;
-                case "4":
-                    viewNotes();
-                    break;
-                case "5":
-                    clearNoteBook();
-                    break;
-                case "6":
-                    loadNotebookFromFile();
-                    break;
-                case "7":
-                    writeNotebookToFile();
-                    break;
-                case "8":
-                    serializeNotebook();
-                    break;
-                case "9":
-                    deserializeNotebook();
-                    break;
-                case "0":
-                    System.exit(0);
-                default:
-                    System.out.println("Incorrectly inputted command. Try again: ");
-                    break;
+                    authorization();
+                    while (true){
+                        String subMenuChoice = sc.nextLine();
+                        switch (subMenuChoice) {
+                            case "1":
+                                addNote();
+                                break;
+                            case "2":
+                                findNoteByContent();
+                                break;
+                            case "3":
+                                findNoteByDate();
+                                break;
+                            case "4":
+                                viewNotes();
+                                break;
+                            case "5":
+                                clearNoteBook();
+                                break;
+                            case "0":
+                                System.exit(0);
+                            default:
+                                System.out.println("Incorrectly inputted command. Try again: ");
+                                break;
+                        }
+                    }
             }
+
         }
     }
 
+    private static void authorization(){
+
+    }
+
+    private static void registration(){
+        RegistrationRequest registrationRequest = new RegistrationRequest();
+        registrationRequest.setCommandName("REGISTRATION");
+        System.out.println("Username: ");
+        registrationRequest.setUsername(sc.nextLine());
+        System.out.println("Password: ");
+        registrationRequest.setPassword(sc.nextLine());
+        Response registrationResponce = controller.doRequest(registrationRequest);
+        if (registrationResponce.isErrorStatus()) {
+            System.out.println(registrationResponce.getErrorMessage());
+        } else {
+            System.out.println("Registration successful");
+        }
+    }
     private static void addNote(){
         System.out.println("Input your note:");
 
-        String content = new Scanner(System.in).nextLine();
+        String content = new Scanner(in).nextLine();
         String date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
 
         AddNoteRequest request = new AddNoteRequest();
@@ -111,7 +129,7 @@ public class InterfaceWork {
         if (!NoteBookProvider.getInstance().getNoteBook().getNotes().isEmpty()) {
             System.out.println("Input search content:");
 
-            String content = new Scanner(System.in).nextLine();
+            String content = new Scanner(in).nextLine();
 
             FindNoteByContentRequest request = new FindNoteByContentRequest();
             request.setCommandName("FIND_NOTE_BY_CONTENT");
@@ -140,7 +158,7 @@ public class InterfaceWork {
         if (!NoteBookProvider.getInstance().getNoteBook().getNotes().isEmpty()) {
             System.out.println("Input search date:");
 
-            String date = new Scanner(System.in).nextLine();
+            String date = new Scanner(in).nextLine();
 
             FindNoteByDateRequest request = new FindNoteByDateRequest();
             request.setCommandName("FIND_NOTE_BY_DATE");
@@ -172,66 +190,6 @@ public class InterfaceWork {
 
         Response response = controller.doRequest(request);
         if(response.isErrorStatus()){
-            System.out.println(response.getErrorMessage());
-        }
-        else{
-            System.out.println(response.getResultMessage());
-        }
-    }
-
-    private static void loadNotebookFromFile(){
-        String filePath = "notebook.txt";
-
-        LoadNotebookFromFileRequest request = new LoadNotebookFromFileRequest();
-        request.setCommandName("LOAD_NOTEBOOK_FROM_FILE");
-        request.setFilePath(filePath);
-
-        Response response = controller.doRequest(request);
-        if(response.isErrorStatus()){
-            System.out.println(response.getErrorMessage());
-        }
-        else{
-            System.out.println(response.getResultMessage());
-        }
-    }
-
-    private static void writeNotebookToFile(){
-        String filePath = "notebook.txt";
-
-        WriteNotebookToFileRequest request = new WriteNotebookToFileRequest();
-        request.setCommandName("WRITE_NOTEBOOK_TO_FILE");
-        request.setFilePath(filePath);
-
-        Response response = controller.doRequest(request);
-        if(response.isErrorStatus()){
-            System.out.println(response.getErrorMessage());
-        }
-        else{
-            System.out.println(response.getResultMessage());
-        }
-    }
-
-    private static void serializeNotebook(){
-        String pathSerialize = "notebookSerialize.txt";
-        SerializeNotebookRequest request = new SerializeNotebookRequest();
-        request.setCommandName("SERIALIZE_NOTEBOOK");
-        request.setFilePath(pathSerialize);
-        Response response = controller.doRequest(request);
-        if (response.isErrorStatus()) {
-            System.out.println(response.getErrorMessage());
-        }
-        else{
-            System.out.println(response.getResultMessage());
-        }
-    }
-
-    private static void deserializeNotebook(){
-        String pathOutSerialize = "notebookSerialize.txt";
-        DeserializeNotebookRequest request = new DeserializeNotebookRequest();
-        request.setCommandName("DESERIALIZE_NOTEBOOK");
-        request.setFilePath(pathOutSerialize);
-        Response response = controller.doRequest(request);
-        if (response.isErrorStatus()) {
             System.out.println(response.getErrorMessage());
         }
         else{

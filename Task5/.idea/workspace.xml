@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Register.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationRequest.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/bean/AuthorizationRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/Command.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Authorize.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ClearNotebook.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ClearNotebook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByContent.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByDate.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/FindNoteByDate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ViewNotes.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/ViewNotes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/CommandHelper.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/CommandHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/Controller.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/ServiceFactory.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/ServiceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/UserService.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/service/UserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" afterPath="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" />
     </list>
     <ignored path="Task5.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,12 +32,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/view/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InterfaceWork.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="610">
+              <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,6 +122,7 @@
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/command/impl/Register.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/CommandHelper.java" />
         <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" />
       </list>
     </option>
   </component>
@@ -228,26 +239,8 @@
               <option name="myItemId" value="nb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Task5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NoteBook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -270,10 +263,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="check" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,6 +285,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Task5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NoteBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -760,16 +767,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476796299405</updated>
-      <workItem from="1476796307871" duration="21625000" />
+      <workItem from="1476796307871" duration="23117000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21625000" />
+    <option name="totallyTimeSpent" value="23117000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -782,7 +789,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24433658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24433658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -974,21 +981,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/UserDAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1124,7 +1123,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1226,6 +1225,24 @@
         <state relative-caret-position="204">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
