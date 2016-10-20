@@ -17,17 +17,18 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 	@Override
 	public void addNote(int userID, Note note) throws DAOException {
 		Connection connection = null;
-		Statement statement = null;
 
 		try {
 			connection = ConnectionPool.getInstance().getConnection();
-			statement.executeUpdate("INSERT INTO notes(id_owner, message, date) VALUES("
-					+ userID + ",'" + note.getData() + "','" + note.getCreationDate() + "');");
+
+			try(Statement statement = connection.createStatement()) {
+				statement.executeUpdate("INSERT INTO notes(id_owner, message, date) VALUES("
+						+ userID + ",'" + note.getData() + "','" + note.getCreationDate() + "');");
+			}
 		} catch (InterruptedException | SQLException e) {
 			throw new DAOException(e.getMessage());
 		} finally {
 			try {
-				statement.close();
 				ConnectionPool.getInstance().returnConnection(connection);
 			} catch (SQLException | InterruptedException e) {
 				throw new DAOException(e.getMessage());
@@ -47,7 +48,6 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 			throw new DAOException(e.getMessage());
 		} finally {
 			try {
-				statement.close();
 				ConnectionPool.getInstance().returnConnection(connection);
 			} catch (SQLException | InterruptedException e) {
 				throw new DAOException(e.getMessage());
@@ -58,7 +58,7 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 	@Override
 	public List<Note> findNoteByContent(int userID, String content) throws DAOException{
 		Connection connection = null;
-		Statement statement = null;
+		Statement statement;
 		List<Note> notes = new ArrayList<>();
 		ResultSet result;
 
@@ -74,7 +74,6 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 			throw new DAOException(e.getMessage());
 		} finally {
 			try {
-				statement.close();
 				ConnectionPool.getInstance().returnConnection(connection);
 			} catch (SQLException | InterruptedException e) {
 				throw new DAOException(e.getMessage());
@@ -102,7 +101,6 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 			throw new DAOException(e.getMessage());
 		} finally {
 			try {
-				statement.close();
 				ConnectionPool.getInstance().returnConnection(connection);
 			} catch (SQLException | InterruptedException e) {
 				throw new DAOException(e.getMessage());
@@ -114,7 +112,7 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 	@Override
 	public List<Note> viewNotes(int userID) throws DAOException {
 		Connection connection = null;
-		Statement statement = null;
+		Statement statement;
 		List<Note> notes = new ArrayList<>();
 		ResultSet result;
 
@@ -129,7 +127,6 @@ public class MySQLNoteBookDAO implements NoteBookDAO{
 			throw new DAOException(e.getMessage());
 		} finally {
 			try {
-				statement.close();
 				ConnectionPool.getInstance().returnConnection(connection);
 			} catch (SQLException | InterruptedException e) {
 				throw new DAOException(e.getMessage());

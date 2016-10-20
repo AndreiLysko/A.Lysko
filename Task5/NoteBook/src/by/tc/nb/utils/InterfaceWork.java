@@ -4,12 +4,8 @@ import by.tc.nb.bean.*;
 import by.tc.nb.bean.entity.Note;
 import by.tc.nb.bean.entity.User;
 import by.tc.nb.controller.Controller;
-import by.tc.nb.service.NotebookService;
 import by.tc.nb.service.ServiceFactory;
 import by.tc.nb.service.exception.ServiceException;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -27,11 +23,11 @@ public class InterfaceWork {
                                                 "4. Show all notes \n" +
                                                 "5. Clear Notebook \n" +
                                                 "0. Exit";
-    private static final String startMenu ="-=Notebook v 1.03=- \n" +
-            "Input command: \n" +
-            "1. Registration \n" +
-            "2. Authorization \n" +
-            "0. Exit \n";
+    private static final String startMenu = "-=Notebook v 1.03=- \n" +
+                                            "Input command: \n" +
+                                            "1. Registration \n" +
+                                            "2. Authorization \n" +
+                                            "0. Exit \n";
 
     public static void start() {
 
@@ -144,9 +140,9 @@ public class InterfaceWork {
 
         ViewNotesRequest request = new ViewNotesRequest();
         request.setCommandName("VIEW_ALL_NOTES");
+        request.setUserID(sessionId);
 
-        ViewNotesResponse response;
-        response = (ViewNotesResponse) controller.doRequest(request);
+        ViewNotesResponse response = (ViewNotesResponse) controller.doRequest(request);
 
         if(response.isErrorStatus()){
             System.out.println(response.getErrorMessage());
@@ -154,6 +150,10 @@ public class InterfaceWork {
         else {
             if (response.getNotes().isEmpty()) {
                 System.out.println("Notebook is empty");
+            }
+            else{
+                System.out.println(response.getResultMessage());
+                response.getNotes().stream().forEach(note -> System.out.println(note));
             }
         }
     }
@@ -169,6 +169,7 @@ public class InterfaceWork {
                 FindNoteByContentRequest request = new FindNoteByContentRequest();
                 request.setCommandName("FIND_NOTE_BY_CONTENT");
                 request.setContent(content);
+                request.setUserID(sessionId);
 
                 FindNoteByContentResponse response = (FindNoteByContentResponse) controller.doRequest(request);
                 List<Note> notesFound = response.getNotes();
@@ -202,6 +203,7 @@ public class InterfaceWork {
                 FindNoteByDateRequest request = new FindNoteByDateRequest();
                 request.setCommandName("FIND_NOTE_BY_DATE");
                 request.setDate(date);
+                request.setUserID(sessionId);
 
                 FindNoteByDateResponse response = (FindNoteByDateResponse) controller.doRequest(request);
                 List<Note> notesFound = response.getNotes();
@@ -227,8 +229,11 @@ public class InterfaceWork {
 
 
     private static void clearNoteBook(){
+
         ClearNotebookRequest request = new ClearNotebookRequest();
+
         request.setCommandName("CLEAR_NOTEBOOK");
+        request.setUserID(sessionId);
 
         Response response = controller.doRequest(request);
         if(response.isErrorStatus()){
