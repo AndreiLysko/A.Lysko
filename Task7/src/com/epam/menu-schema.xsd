@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://www.task7.com/menu-schema"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.task7.com/menu-schema"
+           elementFormDefault="qualified">
+
+    <xs:element name="menu" type="Menu"/>
+
+    <xs:complexType name="Menu">
+        <xs:sequence>
+            <xs:element name="menuPage" type="MenuPage" minOccurs="1" maxOccurs="12"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="menuPageType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="cold_snacks"/>
+            <xs:enumeration value="hot_snacks"/>
+            <xs:enumeration value="breakfasts"/>
+            <xs:enumeration value="salads"/>
+            <xs:enumeration value="soups"/>
+            <xs:enumeration value="fish meal"/>
+            <xs:enumeration value="meat meal"/>
+            <xs:enumeration value="garnish"/>
+            <xs:enumeration value="meal on grill"/>
+            <xs:enumeration value="chef meal"/>
+            <xs:enumeration value="addons"/>
+            <xs:enumeration value="desserts"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="MenuPage">
+        <xs:sequence>
+            <xs:element name="dish" type="Dish" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="pageType" type="menuPageType"/>
+    </xs:complexType>
+
+    <xs:complexType name="Dish">
+        <xs:sequence>
+            <xs:element name="photo" type="xs:string"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="weight" type="xs:string"/>
+            <xs:element name="variations" type="Variations"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Variations">
+        <xs:sequence>
+            <xs:element name="variation" type="Variation" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Variation">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="price" type="xs:int" default="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
