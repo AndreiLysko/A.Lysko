@@ -1,61 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://www.task7.com/menu-schema"
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.task7.com/menu-schema"
+
+<schema 	xmlns="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.task7.org/menu-schema"
+           xmlns:tns="http://www.task7.org/menu-schema"
            elementFormDefault="qualified">
 
-    <xs:element name="menu" type="Menu"/>
+    <element name="menu">
+        <complexType>
+            <sequence>
+                <element name="menuPage" type="tns:dishType" minOccurs="1" maxOccurs="12"/>
+            </sequence>
+        </complexType>
+    </element>
 
-    <xs:complexType name="Menu">
-        <xs:sequence>
-            <xs:element name="menuPage" type="MenuPage" minOccurs="1" maxOccurs="12"/>
-        </xs:sequence>
-    </xs:complexType>
+    <complexType name="dishType">
+        <sequence>
+            <element name="dish"  type="tns:dish" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
 
-    <xs:simpleType name="menuPageType">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="cold_snacks"/>
-            <xs:enumeration value="hot_snacks"/>
-            <xs:enumeration value="breakfasts"/>
-            <xs:enumeration value="salads"/>
-            <xs:enumeration value="soups"/>
-            <xs:enumeration value="fish meal"/>
-            <xs:enumeration value="meat meal"/>
-            <xs:enumeration value="garnish"/>
-            <xs:enumeration value="meal on grill"/>
-            <xs:enumeration value="chef meal"/>
-            <xs:enumeration value="addons"/>
-            <xs:enumeration value="desserts"/>
-        </xs:restriction>
-    </xs:simpleType>
+        <attribute name="dishTypeName" use="required">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="coldSnack"></enumeration>
+                    <enumeration value="hotSnack"></enumeration>
+                    <enumeration value="breakfast"></enumeration>
+                    <enumeration value="salads"></enumeration>
+                    <enumeration value="soups"></enumeration>
+                    <enumeration value="fish meal"></enumeration>
+                    <enumeration value="meat meal"></enumeration>
+                    <enumeration value="garnish"></enumeration>
+                    <enumeration value="grill meal"></enumeration>
+                    <enumeration value="from Chef"></enumeration>
+                    <enumeration value="addons"></enumeration>
+                    <enumeration value="dessert"></enumeration>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
 
-    <xs:complexType name="MenuPage">
-        <xs:sequence>
-            <xs:element name="dish" type="Dish" minOccurs="1" maxOccurs="unbounded"/>
-        </xs:sequence>
-        <xs:attribute name="pageType" type="menuPageType"/>
-    </xs:complexType>
+    <complexType name="dish" >
+        <sequence>
+            <element name="photo" type="anyURI"/>
+            <element name="title" type="string"/>
+            <element name="weight" type="string"/>
+            <element name="variations" type="tns:variations"/>
+        </sequence>
+    </complexType>
 
-    <xs:complexType name="Dish">
-        <xs:sequence>
-            <xs:element name="photo" type="xs:string"/>
-            <xs:element name="title" type="xs:string"/>
-            <xs:element name="weight" type="xs:string"/>
-            <xs:element name="variations" type="Variations"/>
-        </xs:sequence>
-    </xs:complexType>
+    <complexType name="variations">
+        <sequence>
+            <element name="variation" type="tns:variation" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
 
-    <xs:complexType name="Variations">
-        <xs:sequence>
-            <xs:element name="variation" type="Variation" minOccurs="1" maxOccurs="unbounded"/>
-        </xs:sequence>
-    </xs:complexType>
+    <complexType name="variation">
+        <sequence>
+            <element name="title" type="string"/>
+            <element name="price" type="int" default="0"/>
+        </sequence>
+    </complexType>
 
-    <xs:complexType name="Variation">
-        <xs:sequence>
-            <xs:element name="title" type="xs:string"/>
-            <xs:element name="price" type="xs:int" default="0"/>
-        </xs:sequence>
-    </xs:complexType>
-
-</xs:schema>
+</schema>
