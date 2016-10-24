@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<goods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.shop.com/goods"
+       xsi:schemaLocation="http://www.shop.com/goods goods.xsd">
+    <good id="0">
+        <title>dildo</title>
+        <category>toys</category>
+        <description>for funny evenings</description>
+        <price>12</price>
+    </good>
+</goods>

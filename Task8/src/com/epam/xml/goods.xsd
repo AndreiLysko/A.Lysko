@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.shop.com/goods"
+        xmlns:gxs="http://www.shop.com/goods"
+        elementFormDefault="qualified">
+    <element name="goods" type="gxs:GoodsForm" />
+
+    <complexType name="GoodsForm">
+        <sequence>
+            <element name="good"
+                     type="gxs:goodItem"
+                     minOccurs="0"
+                     maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    
+    <complexType name="goodItem">
+        <sequence>
+            <element name="title" type="string"/>
+            <element name="category" type="string"/>
+            <element name="description" type="string"/>
+            <element name="price" type="int"/>
+        </sequence>
+        <attribute name="id" type="int"/>
+    </complexType>
+</schema>
