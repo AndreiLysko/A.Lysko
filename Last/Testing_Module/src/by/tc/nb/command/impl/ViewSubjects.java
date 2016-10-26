@@ -2,15 +2,13 @@ package by.tc.nb.command.impl;
 
 import by.tc.nb.bean.Request;
 import by.tc.nb.bean.Response;
-import by.tc.nb.bean.ViewNotesRequest;
-import by.tc.nb.bean.ViewNotesResponse;
 import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
 import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.ServiceFactory;
 import by.tc.nb.service.exception.ServiceException;
 
-public class ViewSubjects implements Command {
+/*public class ViewSubjects implements Command {
 
     @Override
     public Response execute(Request request) throws CommandException {
@@ -21,10 +19,10 @@ public class ViewSubjects implements Command {
 
             req = (ViewNotesRequest) request;
             ViewNotesResponse response = new ViewNotesResponse();
-            TestModuleService nbService = ServiceFactory.getInstance().getTestModuleService();
+            TestModuleService testModuleService = ServiceFactory.getInstance().getTestModuleService();
 
             try {
-                response.setQuestions(nbService.viewNotes(req.getUserID()));
+                response.setQuestions(testModuleService.viewNotes(req.getUserID()));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);
@@ -42,3 +40,4 @@ public class ViewSubjects implements Command {
     }
 
 }
+*/

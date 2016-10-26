@@ -2,6 +2,7 @@ package by.tc.nb.bean.entity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 public class Test {
 
@@ -11,10 +12,14 @@ public class Test {
     private String test_date;
     private int points;
 
-    public Test(int id_owner, int subject_id, String subject_name, int points) {
+    public Test() {
+        this.test_date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
+    }
+
+    public Test(int id_owner, int subject_id, int points) {
         this.id_owner = id_owner;
         this.subject_id = subject_id;
-        this.subject_name = subject_name;
+        this.subject_name = Subjects.values()[subject_id].toString();
         this.points = points;
         this.test_date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
     }

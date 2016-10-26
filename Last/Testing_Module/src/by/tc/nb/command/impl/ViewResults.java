@@ -7,7 +7,7 @@ import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.ServiceFactory;
 import by.tc.nb.service.exception.ServiceException;
 
-public class ViewResults implements Command {
+/*public class ViewResults implements Command {
 
     @Override
     public Response execute(Request request) throws CommandException {
@@ -35,4 +35,4 @@ public class ViewResults implements Command {
             throw new CommandException("Incorrect request");
         }
     }
-}
+}*/

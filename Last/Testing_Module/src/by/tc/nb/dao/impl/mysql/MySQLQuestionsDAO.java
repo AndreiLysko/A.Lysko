@@ -1,6 +1,8 @@
 package by.tc.nb.dao.impl.mysql;
 
 import by.tc.nb.bean.entity.Question;
+import by.tc.nb.bean.entity.Subjects;
+import by.tc.nb.bean.entity.Test;
 import by.tc.nb.dao.QuestionsDAO;
 import by.tc.nb.dao.exception.DAOException;
 import by.tc.nb.dao.impl.pool.ConnectionPool;
@@ -22,7 +24,7 @@ public class MySQLQuestionsDAO implements QuestionsDAO {
 			connection = ConnectionPool.getInstance().getConnection();
 
 			try(Statement statement = connection.createStatement()) {
-				statement.executeUpdate("INSERT INTO questions(id_subject, name_subjects, question_text, answer_number, points) VALUES("
+				statement.executeUpdate("INSERT INTO questions(id_subject, name_subject, question_text, answer_number, points) VALUES("
 						+ subject_id + ",'" + question.getName_subject() + "','"
 						+ question.getText() + "','" +question.getAnswer() +"','"
                         + question.getPoints() +"');");
@@ -39,45 +41,29 @@ public class MySQLQuestionsDAO implements QuestionsDAO {
 	}
 
 	@Override
-	public void clearNotebook(int userID) throws DAOException {
+	public List<Question> passTest(int subject_id) throws DAOException {
 		Connection connection = null;
-		Statement statement = null;
-
-		try {
-			connection = ConnectionPool.getInstance().getConnection();
-			statement.executeUpdate("DELETE FROM notes WHERE id_owner=" + userID + ";");
-		} catch (InterruptedException | SQLException e) {
-			throw new DAOException(e.getMessage());
-		} finally {
-			try {
-				ConnectionPool.getInstance().returnConnection(connection);
-			} catch (SQLException | InterruptedException e) {
-				throw new DAOException(e.getMessage());
-			}
-		}
-	}
-
-	@Override
-	public List<Question> findNoteByContent(int userID, String content) throws DAOException{
-		Connection connection = null;
-		Statement statement;
 		List<Question> questions = new ArrayList<>();
 		ResultSet result;
 
 		try {
 			connection = ConnectionPool.getInstance().getConnection();
-			statement = connection.createStatement();
-			result = statement.executeQuery("SELECT date, message FROM notes WHERE id_owner="
-					+ userID + " AND message LIKE '%" + content + "%';");
+			Statement statement = connection.createStatement();
+			result = statement.executeQuery("SELECT question_text, answer_number, points FROM questions WHERE id_subject="
+			+ subject_id + ";");
 			while (result.next()){
-				//questions.add(new Question(result.getString(1),result.getString(2)));
+				questions.add(new Question(subject_id, Subjects.values()[subject_id].toString(),
+						result.getString(1),result.getInt(2),result.getInt(3)));
 			}
-		} catch (InterruptedException | SQLException e) {
+		}
+		catch (InterruptedException | SQLException e){
 			throw new DAOException(e.getMessage());
-		} finally {
+		}
+		finally {
 			try {
 				ConnectionPool.getInstance().returnConnection(connection);
-			} catch (SQLException | InterruptedException e) {
+			}
+			catch (SQLException | InterruptedException e){
 				throw new DAOException(e.getMessage());
 			}
 		}
@@ -85,55 +71,34 @@ public class MySQLQuestionsDAO implements QuestionsDAO {
 	}
 
 	@Override
-	public List<Question> findNoteByDate(int userID, String date) throws DAOException {
+	public Test writeResults(int owner_id, int subject_id, int points) throws DAOException {
+
 		Connection connection = null;
-		Statement statement = null;
-		List<Question> questions = new ArrayList<>();
-		ResultSet result;
+		Test test = new Test();
 
 		try {
 			connection = ConnectionPool.getInstance().getConnection();
-			statement = connection.createStatement();
-			result = statement.executeQuery("SELECT date, message FROM notes WHERE id_owner="
-					+ userID + " AND date='" + date + "';");
-			while (result.next()){
-				//questions.add(new Question(result.getString(1),result.getString(2)));
-			}
-		} catch (InterruptedException | SQLException e) {
+			Statement statement = connection.createStatement();
+			statement.executeQuery("INSERT INTO results(id_owner, subject_id, subject_name, test_date, points) VALUES("
+					+ owner_id + ",'" + subject_id + "','"
+					+ Subjects.values()[subject_id] + "','" +test.getTest_date() +"','"
+					+ points +"');");
+			test.setId_owner(owner_id);
+			test.setSubject_id(subject_id);
+			test.setPoints(points);
+			test.setSubject_name(Subjects.values()[subject_id].toString());
+		}
+		catch (InterruptedException | SQLException e){
 			throw new DAOException(e.getMessage());
-		} finally {
+		}
+		finally {
 			try {
 				ConnectionPool.getInstance().returnConnection(connection);
-			} catch (SQLException | InterruptedException e) {
+			}
+			catch (SQLException | InterruptedException e){
 				throw new DAOException(e.getMessage());
 			}
 		}
-		return questions;
-	}
-
-	@Override
-	public List<Question> viewNotes(int userID) throws DAOException {
-		Connection connection = null;
-		Statement statement;
-		List<Question> questions = new ArrayList<>();
-		ResultSet result;
-
-		try {
-			connection = ConnectionPool.getInstance().getConnection();
-			statement = connection.createStatement();
-			result = statement.executeQuery("SELECT date, message FROM notes WHERE id_owner='" + userID + "';");
-			while (result.next()){
-				//questions.add(new Question(result.getString(1),result.getString(2)));
-			}
-		} catch (InterruptedException | SQLException e) {
-			throw new DAOException(e.getMessage());
-		} finally {
-			try {
-				ConnectionPool.getInstance().returnConnection(connection);
-			} catch (SQLException | InterruptedException e) {
-				throw new DAOException(e.getMessage());
-			}
-		}
-		return questions;
+		return test;
 	}
 }

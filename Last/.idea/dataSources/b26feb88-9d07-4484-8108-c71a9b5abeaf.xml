@@ -112,7 +112,7 @@
       <mandatory>1</mandatory>
       <data-type>varchar(45)|0</data-type>
     </column>
-    <column id="35" parent="11" name="priviledges">
+    <column id="35" parent="11" name="privileges">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>

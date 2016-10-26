@@ -4,7 +4,7 @@ import by.tc.nb.bean.entity.Question;
 
 import java.util.List;
 
-public class FindNoteByContentResponse extends Response {
+public class PassTestResponse extends Response {
 
     List<Question> questions;
 

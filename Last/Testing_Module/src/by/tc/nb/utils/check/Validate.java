@@ -2,6 +2,18 @@ package by.tc.nb.utils.check;
 
 public class Validate {
 
+    private static final String REG_EXP_INTEGER = "\\d+";
+
+    public static boolean integer(String checkStr){
+
+        if(checkStr.matches(REG_EXP_INTEGER)){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public static boolean question(int subjectID, String searchString) {
 
         if (searchString == null || searchString.equals("") || subjectID < 0) {

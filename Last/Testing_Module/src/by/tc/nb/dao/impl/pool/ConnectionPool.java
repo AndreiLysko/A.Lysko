@@ -19,7 +19,7 @@ public class ConnectionPool {
 		String password = "root";
 
 		try {
-            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+            DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
             for(int index = 0; index < pool.remainingCapacity(); index++) {
                 pool.add(DriverManager.getConnection(url,username,password));
             }

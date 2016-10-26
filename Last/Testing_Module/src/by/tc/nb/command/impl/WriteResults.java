@@ -3,24 +3,28 @@ package by.tc.nb.command.impl;
 import by.tc.nb.bean.*;
 import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
-import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.ServiceFactory;
+import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.exception.ServiceException;
 
-public class PerformTest implements Command {
+public class WriteResults implements Command{
 
     @Override
     public Response execute(Request request) throws CommandException {
-        FindNoteByContentRequest req;
+        WriteResultsRequest req;
 
-        if(request instanceof FindNoteByContentRequest) {
+        if(request instanceof WriteResultsRequest) {
 
-            req = (FindNoteByContentRequest) request;
-            TestModuleService nbService = ServiceFactory.getInstance().getTestModuleService();
-            FindNoteByContentResponse response = new FindNoteByContentResponse();
+            req = (WriteResultsRequest) request;
+            TestModuleService testModuleService = ServiceFactory.getInstance().getTestModuleService();
+            WriteResultsResponse response = new WriteResultsResponse();
+            int subject_id = req.getSubject_id();
+            int owner_id = req.getOwner_id();
+            int points = req.getPoints();
+
 
             try {
-                response.setQuestions(nbService.findNoteByContent(req.getUserID(),req.getContent()));
+                response.setTest(testModuleService.writeResults(owner_id,subject_id,points));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);
@@ -29,7 +33,7 @@ public class PerformTest implements Command {
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Search text found");
+            response.setResultMessage("Test started");
             return response;
         } else {
             throw new CommandException("Incorrect request");

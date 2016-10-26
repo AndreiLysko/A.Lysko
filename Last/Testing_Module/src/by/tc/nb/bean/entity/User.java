@@ -4,10 +4,17 @@ public class User {
 
     private final int id;
     private final String username;
+    private int priviledge;
 
     public User(int id, String username) {
         this.id = id;
         this.username = username;
+    }
+
+    public User(int id, String username, int priviledge) {
+        this.id = id;
+        this.username = username;
+        this.priviledge = priviledge;
     }
 
     public int getId() {
@@ -18,6 +25,10 @@ public class User {
         return username;
     }
 
+    public int getPriviledge() {
+        return priviledge;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -26,19 +37,25 @@ public class User {
         User user = (User) o;
 
         if (id != user.id) return false;
-        return username != null ? username.equals(user.username) : user.username == null;
+        if (priviledge != user.priviledge) return false;
+        return username.equals(user.username);
 
     }
 
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (username != null ? username.hashCode() : 0);
+        result = 31 * result + username.hashCode();
+        result = 31 * result + priviledge;
         return result;
     }
 
     @Override
     public String toString() {
-        return this.getClass().getName() + "[id=" + id + ", username=" + username + "]\n";
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", priviledge=" + priviledge +
+                '}';
     }
 }

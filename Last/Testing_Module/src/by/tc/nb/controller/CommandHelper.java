@@ -13,10 +13,10 @@ public class CommandHelper {
     public CommandHelper() {
 
         commands.put("ADD_NEW_QUESTION", new AddQuestion());
-        commands.put("VIEW_ALL_SUBJECTS", new ViewSubjects());
-        commands.put("CLEAR_NOTEBOOK", new ClearNotebook());
-        commands.put("PERFORM_TEST", new PerformTest());
-        commands.put("VIEW_MY_RESULTS", new ViewResults());
+        //commands.put("VIEW_ALL_SUBJECTS", new ViewSubjects());
+        commands.put("WRITE_RESULTS", new WriteResults());
+        commands.put("PASS_TEST", new PassTest());
+        //commands.put("VIEW_MY_RESULTS", new ViewResults());
         commands.put("AUTHORIZATION", new Authorize());
         commands.put("REGISTRATION", new Register());
 

@@ -22,10 +22,10 @@ public class MySQLUserDAO implements UserDAO {
 		try {
 			connection = ConnectionPool.getInstance().getConnection();
 			statement = connection.createStatement();
-			ResultSet result = statement.executeQuery("SELECT id, login FROM USERS WHERE login='"
+			ResultSet result = statement.executeQuery("SELECT id, login, privileges FROM USERS WHERE login='"
 					+ username + "' AND password='" + password + "';");
 			if (result.next()){
-				user = new User(result.getInt(1),result.getString(2));
+				user = new User(result.getInt(1),result.getString(2),result.getInt(3));
 			}
 
 		} catch (InterruptedException | SQLException e) {

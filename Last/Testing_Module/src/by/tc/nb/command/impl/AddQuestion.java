@@ -24,7 +24,7 @@ public class AddQuestion implements Command {
 
 
             try {
-                testModuleService.addQuestion(req.getUserID(),req.getQuestionText(),req.getSubjectID());
+                testModuleService.addQuestion(req.getSubjectID(),req.getQuestionText(),req.getAnswerNumber(),req.getPoints());
             } catch (ServiceException e) {
                 response.setErrorStatus(true);
                 response.setErrorMessage(e.getMessage());
@@ -32,7 +32,7 @@ public class AddQuestion implements Command {
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Question has been successfully added");
+            response.setResultMessage("Here is your test");
             return response;
         }
         else {
