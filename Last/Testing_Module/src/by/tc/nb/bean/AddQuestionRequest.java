@@ -6,6 +6,7 @@ public class AddQuestionRequest extends Request {
     private String questionText;
     private int answerNumber;
     private int subjectID;
+    private String subjectName;
     private int points;
 
     public int getAnswerNumber() {
@@ -30,6 +31,14 @@ public class AddQuestionRequest extends Request {
 
     public void setSubjectID(int subjectID) {
         this.subjectID = subjectID;
+    }
+
+    public String getSubjectName() {
+        return subjectName;
+    }
+
+    public void setSubjectName(String subjectName) {
+        this.subjectName = subjectName;
     }
 
     public int getPoints() {

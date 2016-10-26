@@ -2,67 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/PassTestRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/PassTestResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/WriteResultsRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/WriteResultsResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/entity/Subjects.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/.idea/dataSources/cce42a52-646a-4892-91e1-f4e53621fb9e.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/ClearNotebookRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/FindBookResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/FindNoteByContentRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/FindNoteByContentResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/FindNoteByDateRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/FindNoteByDateResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/ViewNotesRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/ViewNotesResponse.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/ClearNotebook.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/utils/InterfaceWork.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/ClearNotebookRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/FindBookResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/FindNoteByContentRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/FindNoteByContentResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/FindNoteByDateRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/FindNoteByDateResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/ViewNotesRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/ViewNotesResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/ClearNotebook.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/PerformTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/ViewResults.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/ViewSubjects.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/utils/InterfaceWork.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/PerformTest.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/PassTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/AddSubjectRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/AddSubjectResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/ChooseSubjectRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/ChooseSubjectResponse.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/entity/Subject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/AddSubject.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/ChooseSubject.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/view/InterfaceWork.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/AddQuestionRequest.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/AddQuestionRequest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/entity/Test.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/entity/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/entity/User.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/bean/entity/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/AddQuestion.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/AddQuestion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/WriteResults.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/command/impl/WriteResults.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/controller/CommandHelper.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/controller/CommandHelper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/QuestionsDAO.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/QuestionsDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLUserDAO.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLUserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/impl/pool/ConnectionPool.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/dao/impl/pool/ConnectionPool.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/service/TestModuleService.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/service/TestModuleService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/service/impl/TestModuleServiceImpl.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/service/impl/TestModuleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/utils/check/Validate.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/utils/check/Validate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/view/View.class" afterPath="$PROJECT_DIR$/../Last/out/production/Testing_Module/by/tc/nb/view/View.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/../Last/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/../Last/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/.idea/dataSources/b26feb88-9d07-4484-8108-c71a9b5abeaf.xml" afterPath="$PROJECT_DIR$/../Last/.idea/dataSources/b26feb88-9d07-4484-8108-c71a9b5abeaf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Last/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/entity/Test.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/entity/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/entity/User.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/bean/entity/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/ViewResults.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/ViewResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/ViewSubjects.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/ViewSubjects.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/controller/CommandHelper.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/controller/CommandHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLUserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/impl/pool/ConnectionPool.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/dao/impl/pool/ConnectionPool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/service/TestModuleService.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/service/TestModuleService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/utils/check/Validate.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/utils/check/Validate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/view/View.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/view/View.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" afterPath="$PROJECT_DIR$/../Last/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Task5.iws" />
@@ -988,6 +957,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="" />
@@ -997,16 +969,16 @@
       <updated>1476796299405</updated>
       <workItem from="1476796307871" duration="39094000" />
       <workItem from="1477315952235" duration="445000" />
-      <workItem from="1477407114186" duration="2600000" />
+      <workItem from="1477407114186" duration="3201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42139000" />
+    <option name="totallyTimeSpent" value="42740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

@@ -1,30 +1,27 @@
 package by.tc.nb.command.impl;
 
-import by.tc.nb.bean.AddQuestionRequest;
-import by.tc.nb.bean.Request;
-import by.tc.nb.bean.Response;
+import by.tc.nb.bean.*;
 import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
-import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.ServiceFactory;
+import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.exception.ServiceException;
 
-public class AddQuestion implements Command {
+public class AddSubject implements Command {
 
     @Override
     public Response execute(Request request) throws CommandException {
+        AddSubjectRequest req;
 
-        AddQuestionRequest req;
+        if (request instanceof AddSubjectRequest) {
 
-        if (request instanceof AddQuestionRequest) {
-
-            req = (AddQuestionRequest) request;
-            Response response = new Response();
+            req = (AddSubjectRequest) request;
+            AddSubjectResponse response = new AddSubjectResponse();
             TestModuleService testModuleService = ServiceFactory.getInstance().getTestModuleService();
 
 
             try {
-                testModuleService.addQuestion(req.getSubjectID(),req.getSubjectName(),req.getQuestionText(),req.getAnswerNumber(),req.getPoints());
+                testModuleService.addSubject(req.getSubject_name());
             } catch (ServiceException e) {
                 response.setErrorStatus(true);
                 response.setErrorMessage(e.getMessage());
@@ -32,12 +29,11 @@ public class AddQuestion implements Command {
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Question added");
+            response.setResultMessage("Subject added");
             return response;
         }
         else {
             throw new CommandException("Incorrect request");
         }
     }
-
 }

@@ -1,43 +1,39 @@
 package by.tc.nb.command.impl;
 
-import by.tc.nb.bean.AddQuestionRequest;
-import by.tc.nb.bean.Request;
-import by.tc.nb.bean.Response;
+import by.tc.nb.bean.*;
 import by.tc.nb.command.Command;
 import by.tc.nb.command.exception.CommandException;
-import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.ServiceFactory;
+import by.tc.nb.service.TestModuleService;
 import by.tc.nb.service.exception.ServiceException;
 
-public class AddQuestion implements Command {
+public class ShowResults implements Command {
 
     @Override
     public Response execute(Request request) throws CommandException {
+        ShowResultsRequest req;
 
-        AddQuestionRequest req;
+        if(request instanceof ShowResultsRequest) {
 
-        if (request instanceof AddQuestionRequest) {
-
-            req = (AddQuestionRequest) request;
-            Response response = new Response();
+            req = (ShowResultsRequest) request;
             TestModuleService testModuleService = ServiceFactory.getInstance().getTestModuleService();
-
+            ShowResultsResponse response = new ShowResultsResponse();
+            int user_id = req.getUser_id();
 
             try {
-                testModuleService.addQuestion(req.getSubjectID(),req.getSubjectName(),req.getQuestionText(),req.getAnswerNumber(),req.getPoints());
-            } catch (ServiceException e) {
+                response.setTests();
+            }
+            catch (ServiceException e) {
                 response.setErrorStatus(true);
                 response.setErrorMessage(e.getMessage());
                 return response;
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Question added");
+            response.setResultMessage("Results are shown");
             return response;
-        }
-        else {
+        } else {
             throw new CommandException("Incorrect request");
         }
     }
-
 }

@@ -16,10 +16,10 @@ public class Test {
         this.test_date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
     }
 
-    public Test(int id_owner, int subject_id, int points) {
+    public Test(int id_owner, int subject_id, String subject_name, int points) {
         this.id_owner = id_owner;
         this.subject_id = subject_id;
-        this.subject_name = Subjects.values()[subject_id].toString();
+        this.subject_name = subject_name;
         this.points = points;
         this.test_date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
     }
@@ -67,11 +67,9 @@ public class Test {
     @Override
     public String toString() {
         return "Test{" +
-                "id_owner=" + id_owner +
-                ", subject_name='" + subject_name + '\'' +
-                ", test_date='" + test_date + '\'' +
-                ", points=" + points +
-                '}';
+                " Subject = '" + subject_name + '\'' +
+                ", testing date = '" + test_date + '\'' +
+                ", points = " + points + " of 100}";
     }
 
     @Override

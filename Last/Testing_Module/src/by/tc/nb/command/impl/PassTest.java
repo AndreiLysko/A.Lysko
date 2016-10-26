@@ -18,10 +18,9 @@ public class PassTest implements Command {
             req = (PassTestRequest) request;
             TestModuleService testModuleService = ServiceFactory.getInstance().getTestModuleService();
             PassTestResponse response = new PassTestResponse();
-            int subject_id = req.getSubject_id();
 
             try {
-                response.setQuestions(testModuleService.passTest(subject_id));
+                response.setQuestions(testModuleService.passTest(req.getSubject_id(),req.getSubject_name()));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);

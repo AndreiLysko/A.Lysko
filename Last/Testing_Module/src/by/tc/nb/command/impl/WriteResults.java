@@ -19,12 +19,13 @@ public class WriteResults implements Command{
             TestModuleService testModuleService = ServiceFactory.getInstance().getTestModuleService();
             WriteResultsResponse response = new WriteResultsResponse();
             int subject_id = req.getSubject_id();
+            String subject_name = req.getSubject_name();
             int owner_id = req.getOwner_id();
             int points = req.getPoints();
 
 
             try {
-                response.setTest(testModuleService.writeResults(owner_id,subject_id,points));
+                response.setTest(testModuleService.writeResults(owner_id,subject_id, subject_name,points));
             }
             catch (ServiceException e) {
                 response.setErrorStatus(true);
@@ -33,7 +34,7 @@ public class WriteResults implements Command{
             }
 
             response.setErrorStatus(false);
-            response.setResultMessage("Test started");
+            response.setResultMessage("Result has been written");
             return response;
         } else {
             throw new CommandException("Incorrect request");

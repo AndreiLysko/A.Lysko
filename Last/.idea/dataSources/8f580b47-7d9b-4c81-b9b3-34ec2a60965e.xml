@@ -13,8 +13,8 @@
     <schema id="8" name="world"/>
     <table id="9" parent="1" name="questions"/>
     <table id="10" parent="1" name="results"/>
-    <table id="11" parent="1" name="users"/>
-    <table id="12" parent="1" name="subjects"/>
+    <table id="11" parent="1" name="subjects"/>
+    <table id="12" parent="1" name="users"/>
     <column id="13" parent="9" name="id_subject">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
@@ -100,76 +100,76 @@
       <columns>id</columns>
       <underlying-index>id_UNIQUE</underlying-index>
     </key>
-    <column id="33" parent="11" name="id">
+    <column id="33" parent="11" name="subject_id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="34" parent="11" name="login">
+    <column id="34" parent="11" name="subject_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <index id="35" parent="11" name="subject_id_UNIQUE">
+      <columns>subject_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="36" parent="11" name="subject_name_UNIQUE">
+      <columns>subject_name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="37" parent="11" name="PRIMARY">
+      <columns>subject_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="38" parent="11" name="subject_id_UNIQUE">
+      <columns>subject_id</columns>
+      <underlying-index>subject_id_UNIQUE</underlying-index>
+    </key>
+    <key id="39" parent="11" name="subject_name_UNIQUE">
+      <columns>subject_name</columns>
+      <underlying-index>subject_name_UNIQUE</underlying-index>
+    </key>
+    <column id="40" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="41" parent="12" name="login">
       <mandatory>1</mandatory>
       <data-type>varchar(45)|0</data-type>
     </column>
-    <column id="35" parent="11" name="password">
+    <column id="42" parent="12" name="password">
       <mandatory>1</mandatory>
       <data-type>varchar(45)|0</data-type>
     </column>
-    <column id="36" parent="11" name="privileges">
+    <column id="43" parent="12" name="privileges">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <default-expression>&apos;0&apos;</default-expression>
     </column>
-    <index id="37" parent="11" name="id_UNIQUE">
+    <index id="44" parent="12" name="id_UNIQUE">
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="38" parent="11" name="username_UNIQUE">
+    <index id="45" parent="12" name="username_UNIQUE">
       <columns>login</columns>
-      <desc-columns></desc-columns>
-      <unique>1</unique>
-    </index>
-    <key id="39" parent="11" name="PRIMARY">
-      <columns>id</columns>
-      <primary>1</primary>
-    </key>
-    <key id="40" parent="11" name="id_UNIQUE">
-      <columns>id</columns>
-      <underlying-index>id_UNIQUE</underlying-index>
-    </key>
-    <key id="41" parent="11" name="username_UNIQUE">
-      <columns>login</columns>
-      <underlying-index>username_UNIQUE</underlying-index>
-    </key>
-    <column id="42" parent="12" name="subject_id">
-      <mandatory>1</mandatory>
-      <data-type>int(11)|0</data-type>
-      <sequence-identity>1</sequence-identity>
-    </column>
-    <column id="43" parent="12" name="subject_name">
-      <mandatory>1</mandatory>
-      <data-type>varchar(100)|0</data-type>
-    </column>
-    <index id="44" parent="12" name="subject_id_UNIQUE">
-      <columns>subject_id</columns>
-      <desc-columns></desc-columns>
-      <unique>1</unique>
-    </index>
-    <index id="45" parent="12" name="subject_name_UNIQUE">
-      <columns>subject_name</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
     <key id="46" parent="12" name="PRIMARY">
-      <columns>subject_id</columns>
+      <columns>id</columns>
       <primary>1</primary>
     </key>
-    <key id="47" parent="12" name="subject_id_UNIQUE">
-      <columns>subject_id</columns>
-      <underlying-index>subject_id_UNIQUE</underlying-index>
+    <key id="47" parent="12" name="id_UNIQUE">
+      <columns>id</columns>
+      <underlying-index>id_UNIQUE</underlying-index>
     </key>
-    <key id="48" parent="12" name="subject_name_UNIQUE">
-      <columns>subject_name</columns>
-      <underlying-index>subject_name_UNIQUE</underlying-index>
+    <key id="48" parent="12" name="username_UNIQUE">
+      <columns>login</columns>
+      <underlying-index>username_UNIQUE</underlying-index>
     </key>
   </database-model>
 </dataSource>

@@ -1,13 +1,8 @@
 package by.tc.nb.view;
 
 import by.tc.nb.bean.*;
-import by.tc.nb.bean.entity.Question;
-import by.tc.nb.bean.entity.Subjects;
-import by.tc.nb.bean.entity.Test;
-import by.tc.nb.bean.entity.User;
+import by.tc.nb.bean.entity.*;
 import by.tc.nb.controller.Controller;
-import by.tc.nb.service.ServiceFactory;
-import by.tc.nb.service.exception.ServiceException;
 import by.tc.nb.utils.check.Validate;
 
 import java.util.List;
@@ -20,14 +15,15 @@ public class InterfaceWork {
     private static final Controller controller = new Controller();
     private static final Scanner sc = new Scanner(in);
     private static boolean flag = true;
-    private static int subjectID = -1;
+    private static int subjectID;
+    private static String subjectName;
     private static int sessionId;
     private static int privileges;
     private static int successPercentage;
     private static final String tutorOperations =    "Choose operation: \n"+
-                                                        "1. Add new question \n" +
+                                                        "1. Add subject \n" +
                                                         "2. Choose subject \n" +
-                                                        "3. Add question to existing subject \n" +
+                                                        "3. Add question \n" +
                                                         "0. Back";
 
     private static final String studentOperations = "Choose operation: \n"+
@@ -63,13 +59,13 @@ public class InterfaceWork {
                                 String subMenuChoice = sc.nextLine();
                                 switch (subMenuChoice) {
                                     case "1":
-                                        addNewQuestion();
+                                        addSubject();
                                         break;
                                     case "2":
                                         chooseSubject();
                                         break;
                                     case "3":
-                                        addQuestionWithSubject();
+                                        addQuestion();
                                         break;
                                     case "0":
                                         flag = false;
@@ -138,6 +134,7 @@ public class InterfaceWork {
     }
 
     private static void registration(){
+
         RegistrationRequest registrationRequest = new RegistrationRequest();
         registrationRequest.setCommandName("REGISTRATION");
         System.out.println("Username: ");
@@ -152,39 +149,74 @@ public class InterfaceWork {
         }
     }
 
+    private static void addSubject(){
+
+        AddSubjectRequest request = new AddSubjectRequest();
+        request.setCommandName("ADD_SUBJECT");
+        System.out.println("Input name of subject to add: ");
+        request.setSubject_name(sc.nextLine().toLowerCase());
+        AddSubjectResponse response = (AddSubjectResponse)controller.doRequest(request);
+        if (response.isErrorStatus()){
+            System.out.println(response.getErrorMessage());
+        }
+        else{
+            System.out.println("Added successfully");
+        }
+    }
+
     private static void chooseSubject(){
-        System.out.println("Choose subject:");
-        for (int i = 0; i < Subjects.values().length; i++) {
-            System.out.println((i+1) + ". " + Subjects.values()[i]);
+        ChooseSubjectRequest chooseSubjectRequest = new ChooseSubjectRequest();
+        chooseSubjectRequest.setCommandName("CHOOSE_SUBJECT");
+        ChooseSubjectResponse response = (ChooseSubjectResponse)controller.doRequest(chooseSubjectRequest);
+        int i = 1;
+        List<Subject> subjects = response.getSubjects();
+        for (Subject s : subjects){
+            System.out.println(i + ". " + s.getSubject_name().toUpperCase());
+            i++;
         }
-        Scanner sc = new Scanner(in);
-        while (true) {
-            String subject = sc.nextLine();
-            if (Validate.integer(subject)){
-                if (0 <= Integer.parseInt(subject)&& Integer.parseInt(subject) < Subjects.values().length){
-                    subjectID = Integer.parseInt(subject) - 1;
-                    break;
+        System.out.println("Enter your choice: ");
+        String choice;
+        while (true){
+            choice = sc.nextLine();
+            if (Validate.integer(choice) && Integer.parseInt(choice) <= subjects.size()){
+                break;
             }
-            }
-            else{
-                System.out.println("Incorrect choice");
-            }
+            System.out.println("Incorrect input");
         }
+        subjectID = subjects.get(Integer.parseInt(choice) - 1).getSubjectID();
+        subjectName = subjects.get(Integer.parseInt(choice) - 1).getSubject_name();
+
     }
 
-    private static void addNewQuestion(){
-        chooseSubject();
-        addQuestionWithSubject();
-    }
 
-    private static void addQuestionWithSubject(){
-        System.out.println("Input question (with answers):");
+    private static void addQuestion(){
 
-        String questionText = sc.nextLine();
+        StringBuilder sb = new StringBuilder();
+        String check;
 
-        System.out.println("Input number of answer");
+        System.out.println("Input question :");
+        sb.append(sc.nextLine() + "\n");
 
+        System.out.println("Input answers count");
+        while (true){
+            check = sc.nextLine();
+            if (Validate.integer(check)){
+                break;
+            }
+            System.out.println("Incorrect input");
+        }
+
+
+        System.out.println("Input answers :");
+        int i;
+        for (i = 1; i <= Integer.parseInt(check); i++){
+            System.out.println("Answer " + i);
+            sb.append("\n" + i + ". " + sc.nextLine());
+        }
+
+        System.out.println("Input number of right answer");
         String answerNumber;
+
         while (true){
             answerNumber = sc.nextLine();
             if (Validate.integer(answerNumber)){
@@ -207,8 +239,9 @@ public class InterfaceWork {
         AddQuestionRequest request = new AddQuestionRequest();
         request.setCommandName("ADD_NEW_QUESTION");
         request.setSubjectID(subjectID);
+        request.setSubjectName(subjectName);
         request.setPoints(Integer.parseInt(pointsForQuestion));
-        request.setQuestionText(questionText);
+        request.setQuestionText(sb.toString());
         request.setAnswerNumber(Integer.parseInt(answerNumber));
 
         Response response = controller.doRequest(request);
@@ -227,6 +260,7 @@ public class InterfaceWork {
         request.setOwner_id(sessionId);
         request.setSubject_id(subjectID);
         request.setPoints(successPercentage);
+        request.setSubject_name(subjectName);
 
         WriteResultsResponse response = (WriteResultsResponse) controller.doRequest(request);
         Test test = response.getTest();
@@ -239,23 +273,22 @@ public class InterfaceWork {
     }
 
     private static void passTest(){
-        //            if (!ServiceFactory.getInstance().getTestModuleService().viewNotes(sessionId).isEmpty()) {
 
-        if (subjectID < 0){
+        if (subjectID < 1){
             chooseSubject();
         }
         PassTestRequest request = new PassTestRequest();
         request.setCommandName("PASS_TEST");
         request.setSubject_id(subjectID);
+        request.setSubject_name(subjectName);
 
         PassTestResponse response = (PassTestResponse) controller.doRequest(request);
         List<Question> questions = response.getQuestions();
 
-        System.out.println("Test " + Subjects.values()[subjectID]);
+        System.out.println("TEST " + subjectName.toUpperCase());
         String answers;
         int totalPoints = 0;
         int points = 0;
-        float percentage = 0;
 
         if (!questions.isEmpty()) {
             System.out.println(response.getResultMessage());
