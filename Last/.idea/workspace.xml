@@ -2,43 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddSubjectRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddSubjectResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ChooseSubjectRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ChooseSubjectResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsRequest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsResponse.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Subject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddSubject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ChooseSubject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ShowResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AddQuestionRequest.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AddQuestionRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/Test.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/AddQuestion.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/AddQuestion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/WriteResults.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/WriteResults.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/controller/CommandHelper.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/controller/CommandHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/QuestionsDAO.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/QuestionsDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/TestModuleService.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/TestModuleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/impl/TestModuleServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/impl/TestModuleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/view/InterfaceWork.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/view/InterfaceWork.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/b26feb88-9d07-4484-8108-c71a9b5abeaf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/b26feb88-9d07-4484-8108-c71a9b5abeaf.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddSubjectRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddSubjectResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AuthorizationRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AuthorizationResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ChooseSubjectRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ChooseSubjectResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/RegistrationRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/Request.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/Response.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsResponse.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Question.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Subject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Subjects.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/User.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/Command.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/exception/CommandException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddSubject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/Authorize.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ChooseSubject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/PassTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/Register.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ShowResults.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ViewResults.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ViewSubjects.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/CommandHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAOFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/UserDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/UserDAOFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/exception/DAOException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLUserDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/pool/ConnectionPool.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/ServiceFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/TestModuleService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/UserService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/exception/ServiceException.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/UserServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/utils/check/Validate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/View.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AddQuestionRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AddSubjectRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AddSubjectResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AuthorizationRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/AuthorizationResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/ChooseSubjectRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/ChooseSubjectResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/PassTestRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/PassTestResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/RegistrationRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/Request.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/Response.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/WriteResultsRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/WriteResultsResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/Question.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/Subject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/Subjects.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/bean/entity/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/Command.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/exception/CommandException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/AddQuestion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/AddSubject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/Authorize.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/ChooseSubject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/PassTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/Register.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/command/impl/WriteResults.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/controller/CommandHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/controller/Controller.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/QuestionsDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/QuestionsDAOFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/UserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/UserDAOFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/exception/DAOException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/impl/mysql/MySQLUserDAO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/dao/impl/pool/ConnectionPool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/ServiceFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/TestModuleService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/exception/ServiceException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/impl/TestModuleServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/utils/check/Validate.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/view/InterfaceWork.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/nb/view/View.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestRequest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsRequest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/PassTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/PassTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/CommandHelper.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/CommandHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/TestModuleService.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/TestModuleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/Testing_Module.iml" afterPath="$PROJECT_DIR$/Testing_Module/Testing_Module.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Task5/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Task5/.idea/workspace.xml" />
     </list>
     <ignored path="Task5.iws" />
@@ -72,6 +136,20 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - testmodule_db@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="results" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -79,106 +157,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MySQLQuestionsDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java">
+      <file leaf-file-name="WriteResults.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/WriteResults.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1272">
-              <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="20" />
-              <folding>
-                <marker date="1477501327068" expanded="true" signature="860:902" ph="SELECT subje... questions" />
-                <marker date="1477501327068" expanded="true" signature="860:929" ph="SELECT * FRO... subjects" />
-                <marker date="1477501327068" expanded="true" signature="989:1060" ph="INSERT INTO subjects... " />
-                <marker date="1477501327068" expanded="true" signature="1103:1154" ph="SELECT subje... subjects" />
-                <marker date="1477501327068" expanded="true" signature="1103:1180" ph="SELECT subje... subjects" />
-                <marker date="1477501327068" expanded="true" signature="1929:1942" ph="SELECT subje... " />
-                <marker date="1477501327068" expanded="true" signature="1929:1951" ph="SELECT subje... subjects" />
-                <marker date="1477501327068" expanded="true" signature="2656:2668" ph="INSERT INTO questions... " />
-                <marker date="1477501327068" expanded="true" signature="2656:2929" ph="INSERT INTO notes... " />
-                <marker date="1477501327068" expanded="true" signature="2656:2930" ph="INSERT INTO questions... " />
-                <marker date="1477501327068" expanded="true" signature="3595:3671" ph="SELECT quest... questions" />
-                <marker date="1477501327068" expanded="true" signature="3595:3688" ph="SELECT quest... questions" />
-                <marker date="1477501327068" expanded="true" signature="4501:4628" ph="INSERT INTO results... " />
-                <marker date="1477501327068" expanded="true" signature="4501:4706" ph="INSERT INTO results... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterfaceWork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="262" column="43" selection-start-line="262" selection-start-column="43" selection-end-line="262" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandHelper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/CommandHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowResultsResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowResults.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ShowResults.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            <state relative-caret-position="153">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WriteResults.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuestionsDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -191,6 +177,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
   </component>
@@ -205,15 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/utils/InterfaceWork.java" />
-        <option value="$PROJECT_DIR$/lib/mysql-connector-java-6.0.4.jar!/com/mysql/cj/jdbc/ConnectionImpl.class" />
-        <option value="$PROJECT_DIR$/NoteBook/src/by/tc/nb/dao/impl/mysql/MySQLNoteBookDAO.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/NotebookService.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Note.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Question.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddNoteRequest.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/ServiceFactory.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/NoteBookDAO.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLNoteBookDAO.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/NoteBookDAOFactory.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAOFactory.java" />
@@ -242,20 +220,29 @@
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ChooseSubject.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/TestModuleService.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsRequest.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestRequest.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/PassTest.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsRequest.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsResponse.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ShowResults.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java" />
-        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" />
         <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/CommandHelper.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/TestModuleService.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ShowResults.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/view/InterfaceWork.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AddQuestionTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AddSubjectTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AuthorizeTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/ChooseSubjectTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/PassTestTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/WriteResultsTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/RegisterTest.java" />
+        <option value="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/ShowResultsTest.java" />
       </list>
     </option>
   </component>
@@ -350,6 +337,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Last" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testing_Module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -368,11 +369,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
+              <option name="myItemId" value="tm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,7 +387,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
+              <option name="myItemId" value="tm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,107 +409,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Last" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testing_Module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Last" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testing_Module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Last" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testing_Module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Last" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testing_Module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
+              <option name="myItemId" value="tm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -530,7 +431,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
+              <option name="myItemId" value="tm" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -539,28 +440,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Last" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Testing_Module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bean" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -585,16 +464,28 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last.edited.regexp" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="by.tc.tm.tests" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrei_Lysko\Documents\GitHub\A.Lysko\Last\Testing_Module\tests\by.tc.tm\commandTest" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.View">
     <configuration default="false" name="View" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="by.tc.nb.view.*" />
+          <option name="PATTERN" value="by.tc.tm.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="by.tc.nb.view.View" />
+      <option name="MAIN_CLASS_NAME" value="by.tc.tm.view.View" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1047,16 +938,16 @@
       <workItem from="1477313423578" duration="16080000" />
       <workItem from="1477402188449" duration="7439000" />
       <workItem from="1477409708611" duration="12933000" />
-      <workItem from="1477489865808" duration="11355000" />
+      <workItem from="1477489865808" duration="15316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86901000" />
+    <option name="totallyTimeSpent" value="90862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1065,7 +956,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949308" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31797236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31797236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1098,15 +989,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java</url>
-          <line>317</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="41" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1115,79 +998,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/Authorize.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/RegistrationRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ClearNotebook.java" />
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ViewNotesResponse.java" />
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="83" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="83" />
-          <folding>
-            <marker date="1477400444270" expanded="true" signature="688:793" ph="SELECT id, l... USERS" />
-            <marker date="1477400444270" expanded="true" signature="688:794" ph="SELECT id, l... USERS" />
-            <marker date="1477400444270" expanded="true" signature="688:795" ph="SELECT id, l... " />
-            <marker date="1477400444270" expanded="true" signature="688:796" ph="SELECT id, l... USERS" />
-            <marker date="1477400444270" expanded="true" signature="1591:1674" ph="INSERT INTO USERS... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AuthorizationResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/exception/CommandException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ViewNotesRequest.java" />
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/ShowResultsRequest.java" />
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ViewResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AuthorizationRequest.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/AuthorizationRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
@@ -1199,10 +1010,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/utils/check/Validate.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/utils/check/Validate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
@@ -1210,14 +1022,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/Command.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="10" column="61" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
@@ -1233,7 +1046,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddSubjectResponse.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/AddSubjectResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
@@ -1243,7 +1056,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/UserDAO.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
@@ -1251,7 +1064,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Subject.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/entity/Subject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
@@ -1259,7 +1072,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ChooseSubjectRequest.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/ChooseSubjectRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
@@ -1267,7 +1080,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ChooseSubjectResponse.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/ChooseSubjectResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
@@ -1278,22 +1091,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddSubjectRequest.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/AddSubjectRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="e#179#180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1311,7 +1114,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Subjects.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/entity/Subjects.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -1319,7 +1122,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/ServiceFactory.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/service/ServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -1331,7 +1134,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Question.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/entity/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -1339,7 +1142,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
@@ -1347,59 +1150,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/TestModuleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="72" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/AddQuestionRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding>
-            <element signature="e#796#797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/AddQuestion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/service/impl/TestModuleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAOFactory.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/dao/QuestionsDAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -1411,17 +1162,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ChooseSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsRequest.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/WriteResultsRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
@@ -1431,15 +1172,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/PassTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/PassTestResponse.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/PassTestResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -1449,15 +1182,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/view/InterfaceWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="262" column="43" selection-start-line="262" selection-start-column="43" selection-end-line="262" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsRequest.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/ShowResultsRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
@@ -1469,15 +1194,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/entity/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/WriteResultsResponse.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/WriteResultsResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
@@ -1487,7 +1204,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/bean/ShowResultsResponse.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/ShowResultsResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
@@ -1500,62 +1217,255 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/WriteResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ShowResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/QuestionsDAO.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/dao/QuestionsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/dao/impl/mysql/MySQLQuestionsDAO.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/service/TestModuleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1272">
-          <caret line="179" column="8" selection-start-line="179" selection-start-column="8" selection-end-line="179" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/service/impl/TestModuleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="93" column="92" selection-start-line="93" selection-start-column="92" selection-end-line="93" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/dao/impl/mysql/MySQLQuestionsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="205" column="20" selection-start-line="205" selection-start-column="20" selection-end-line="205" selection-end-column="20" />
           <folding>
-            <marker date="1477501327068" expanded="true" signature="860:902" ph="SELECT subje... questions" />
-            <marker date="1477501327068" expanded="true" signature="860:929" ph="SELECT * FRO... subjects" />
-            <marker date="1477501327068" expanded="true" signature="989:1060" ph="INSERT INTO subjects... " />
-            <marker date="1477501327068" expanded="true" signature="1103:1154" ph="SELECT subje... subjects" />
-            <marker date="1477501327068" expanded="true" signature="1103:1180" ph="SELECT subje... subjects" />
-            <marker date="1477501327068" expanded="true" signature="1929:1942" ph="SELECT subje... " />
-            <marker date="1477501327068" expanded="true" signature="1929:1951" ph="SELECT subje... subjects" />
-            <marker date="1477501327068" expanded="true" signature="2656:2668" ph="INSERT INTO questions... " />
-            <marker date="1477501327068" expanded="true" signature="2656:2929" ph="INSERT INTO notes... " />
-            <marker date="1477501327068" expanded="true" signature="2656:2930" ph="INSERT INTO questions... " />
-            <marker date="1477501327068" expanded="true" signature="3595:3671" ph="SELECT quest... questions" />
-            <marker date="1477501327068" expanded="true" signature="3595:3688" ph="SELECT quest... questions" />
-            <marker date="1477501327068" expanded="true" signature="4501:4628" ph="INSERT INTO results... " />
-            <marker date="1477501327068" expanded="true" signature="4501:4706" ph="INSERT INTO results... " />
+            <marker date="1477503910270" expanded="true" signature="822:864" ph="SELECT subje... questions" />
+            <marker date="1477503910270" expanded="true" signature="822:891" ph="SELECT * FRO... subjects" />
+            <marker date="1477503910270" expanded="true" signature="951:1022" ph="INSERT INTO subjects... " />
+            <marker date="1477503910270" expanded="true" signature="1065:1116" ph="SELECT subje... subjects" />
+            <marker date="1477503910270" expanded="true" signature="1065:1142" ph="SELECT subje... subjects" />
+            <marker date="1477503910270" expanded="true" signature="1891:1904" ph="SELECT subje... " />
+            <marker date="1477503910270" expanded="true" signature="1891:1913" ph="SELECT subje... subjects" />
+            <marker date="1477503910270" expanded="true" signature="2618:2630" ph="INSERT INTO questions... " />
+            <marker date="1477503910270" expanded="true" signature="2618:2891" ph="INSERT INTO notes... " />
+            <marker date="1477503910270" expanded="true" signature="2618:2892" ph="INSERT INTO questions... " />
+            <marker date="1477503910270" expanded="true" signature="3557:3633" ph="SELECT quest... questions" />
+            <marker date="1477503910270" expanded="true" signature="3557:3650" ph="SELECT quest... questions" />
+            <marker date="1477503910270" expanded="true" signature="4463:4590" ph="INSERT INTO results... " />
+            <marker date="1477503910270" expanded="true" signature="4463:4668" ph="INSERT INTO results... " />
+            <marker date="1477503910270" expanded="true" signature="5450:5487" ph="SELECT * FRO... results" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/controller/CommandHelper.java">
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/controller/CommandHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/entity/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="98" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/AddQuestionRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="36" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
+          <folding>
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/bean/PassTestRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/nb/command/impl/ViewResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/tests/by.tc.tm/commandTest/AddQuestionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AddQuestionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/AddQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/view/InterfaceWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="322" column="0" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/AddSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AddSubjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/ChooseSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/ChooseSubjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/Authorize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AuthorizeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/PassTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/PassTestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/RegisterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/ShowResultsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/ShowResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/WriteResultsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_Module/src/by/tc/tm/command/impl/WriteResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1611,7 +1521,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>NoteBook</last-edited>
+          <last-edited>Testing_Module</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
