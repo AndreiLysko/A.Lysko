@@ -24,8 +24,8 @@
         <subjectID>2</subjectID>
         <subjectName>math</subjectName>
         <question></question>
-        <answerNumber></answerNumber>
-        <points></points>
+        <answerNumber>0</answerNumber>
+        <points>0</points>
 
     </positive_test>
 

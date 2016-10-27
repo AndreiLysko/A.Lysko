@@ -14,12 +14,12 @@ public class Parser {
 
     private static Data positiveData = new Data();
     private static Data negativeData = new Data();
-    private static List<Data> positiveDataList = new ArrayList<>();
-    private static List<Data> negativeDataList = new ArrayList<>();
+    private static List<Data> positiveDataList = new ArrayList<Data>();
+    private static List<Data> negativeDataList = new ArrayList<Data>();
 
     private static Element getTests() throws IOException, SAXException {
         DOMParser parser = new DOMParser();
-        parser.parse("data.xml");
+        parser.parse("..\\Testing_Module\\src\\by\\tc\\tm\\tests\\xml\\data.xml");
         Document document = parser.getDocument();
         Element root = document.getDocumentElement();
         return root;

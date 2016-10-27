@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class RegisterTest {
 
-/*    @Test(dataProvider = "registrationPositive", dataProviderClass = DataProviderTM.class)
+    @Test(dataProvider = "registrationPositive", dataProviderClass = DataProviderTM.class)
     public void positiveTest(String login, String password) throws DAOException, SAXException, IOException {
 
         boolean actual = UserDAOFactory.getInstance().getUserDAO().registration(login, password);
@@ -21,7 +21,7 @@ public class RegisterTest {
         Assert.assertTrue(actual);
 
     }
-*/
+
 
     @Test(expectedExceptions = {ServiceException.class} ,dataProvider = "registrationNegative", dataProviderClass = DataProviderTM.class)
     public void negativeTest(String login, String password) throws ServiceException {
