@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/xml/Demo/Demo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/AddQuestionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/AddSubjectTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/AuthorizeTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/ChooseSubjectTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/PassTestTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/RegisterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/ShowResultsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/WriteResultsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/dataProvider/DataProviderTM.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/xml/Data.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/xml/Demo/Demo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/tests/xml/Parser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Testing_Module/data.xsd" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AddQuestionTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/AddQuestionTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AddSubjectTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/AddSubjectTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/AuthorizeTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/AuthorizeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/ChooseSubjectTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/ChooseSubjectTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/PassTestTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/PassTestTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/RegisterTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/RegisterTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/ShowResultsTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/ShowResultsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/WriteResultsTest.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/WriteResultsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/dataProvider/DataProviderTM.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/dataProvider/DataProviderTM.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/xml/Data.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/xml/Data.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/tests/xml/Parser.java" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/xml/Parser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/data.xml" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/xml/data.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Testing_Module/src/data.xsd" afterPath="$PROJECT_DIR$/Testing_Module/src/tests/xml/data.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/view/InterfaceWork.class" afterPath="$PROJECT_DIR$/out/production/Testing_Module/by/tc/tm/view/InterfaceWork.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/view/InterfaceWork.java" afterPath="$PROJECT_DIR$/Testing_Module/src/by/tc/tm/view/InterfaceWork.java" />
-    </list>
+    <list default="true" id="a508181b-3edf-4751-a6fc-d645378062ce" name="Default" comment="" />
     <ignored path="Task5.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1174,7 +1142,7 @@
       <workItem from="1477409708611" duration="12933000" />
       <workItem from="1477489865808" duration="17761000" />
       <workItem from="1477563681561" duration="23671000" />
-      <workItem from="1477589309635" duration="12779000" />
+      <workItem from="1477589309635" duration="13136000" />
     </task>
     <servers />
   </component>
@@ -1211,7 +1179,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129757000" />
+    <option name="totallyTimeSpent" value="130114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
