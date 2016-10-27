@@ -6,6 +6,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +22,17 @@ public class Parser {
     private static List<Data> positiveDataList = new ArrayList<Data>();
     private static List<Data> negativeDataList = new ArrayList<Data>();
 
-    private static Element getTests() throws IOException, SAXException {
-        DOMParser parser = new DOMParser();
-        parser.parse("..\\Testing_Module\\src\\by\\tc\\tm\\tests\\xml\\data.xml");
+    private static Element getTests() throws IOException, SAXException, ParserConfigurationException {
+
+        DocumentBuilderFactory factory =
+                DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document =
+                builder.parse(new File("../Testing_Module/data.xml"));
+/*        DOMParser parser = new DOMParser();
         Document document = parser.getDocument();
+        parser.parse("../Testing_Module/data.xml");
+        Document document1 = Builder.parse*/
         Element root = document.getDocumentElement();
         return root;
     }
@@ -31,7 +43,7 @@ public class Parser {
         return child;
     }
 
-    public static List<Data> getPositiveDataList() throws IOException, SAXException {
+    public static List<Data> getPositiveDataList() throws IOException, SAXException, ParserConfigurationException {
 
         NodeList positive;
         Element root = getTests();
@@ -55,7 +67,7 @@ public class Parser {
         return positiveDataList;
     }
 
-    public static List<Data> getNegativeDataList() throws IOException, SAXException {
+    public static List<Data> getNegativeDataList() throws IOException, SAXException, ParserConfigurationException {
 
         NodeList negative;
         Element root = getTests();

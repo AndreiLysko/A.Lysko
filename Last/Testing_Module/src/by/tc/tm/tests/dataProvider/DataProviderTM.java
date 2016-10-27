@@ -4,12 +4,13 @@ import by.tc.tm.tests.xml.Parser;
 import org.testng.annotations.DataProvider;
 import org.xml.sax.SAXException;
 
+import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 
 public class DataProviderTM {
 
     @DataProvider(name = "authorizationPositive")
-    public static Object[][] authorizationPositiveTest() throws SAXException, IOException {
+    public static Object[][] authorizationPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][2];
         obj[0][0] = Parser.getPositiveDataList().get(0).getLogin();
         obj[0][1] = Parser.getPositiveDataList().get(0).getPassword();
@@ -18,7 +19,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "authorizationNegative")
-    public static Object[][] authorizationNegativeTest() throws SAXException, IOException {
+    public static Object[][] authorizationNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][2];
         obj[0][0] = Parser.getNegativeDataList().get(0).getLogin();
         obj[0][1] = Parser.getNegativeDataList().get(0).getPassword();
@@ -27,7 +28,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "registrationPositive")
-    public static Object[][] registrationPositiveTest() throws SAXException, IOException {
+    public static Object[][] registrationPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][2];
         obj[0][0] = Parser.getPositiveDataList().get(0).getLogin();
         obj[0][1] = Parser.getPositiveDataList().get(0).getPassword();
@@ -36,7 +37,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "registrationNegative")
-    public static Object[][] registrationNegativeTest() throws SAXException, IOException {
+    public static Object[][] registrationNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][2];
         obj[0][0] = Parser.getPositiveDataList().get(0).getLogin();
         obj[0][1] = Parser.getPositiveDataList().get(0).getPassword();
@@ -45,7 +46,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "addQuestionPositive")
-    public static Object[][] addQuestionPositiveTest() throws SAXException, IOException {
+    public static Object[][] addQuestionPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][5];
         obj[0][0] = Parser.getPositiveDataList().get(0).getSubjectID();
         obj[0][1] = Parser.getPositiveDataList().get(0).getSubjectName();
@@ -57,7 +58,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "addQuestionNegative")
-    public static Object[][] addQuestionNegativeTest() throws SAXException, IOException {
+    public static Object[][] addQuestionNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][5];
         obj[0][0] = Parser.getNegativeDataList().get(0).getSubjectID();
         obj[0][1] = Parser.getNegativeDataList().get(0).getSubjectName();
@@ -69,7 +70,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "addSubjectPositive")
-    public static Object[][] addSubjectPositiveTest() throws SAXException, IOException {
+    public static Object[][] addSubjectPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][1];
         obj[0][0] = Parser.getPositiveDataList().get(0).getSubjectName();
 
@@ -77,7 +78,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "addSubjectNegative")
-    public static Object[][] addSubjectNegativeTest() throws SAXException, IOException {
+    public static Object[][] addSubjectNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][1];
         obj[0][0] = Parser.getNegativeDataList().get(0).getSubjectName();
 
@@ -85,7 +86,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "chooseSubjectPositive")
-    public static Object[][] chooseSubjectPositiveTest() throws SAXException, IOException {
+    public static Object[][] chooseSubjectPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][1];
         obj[0][0] = Parser.getPositiveDataList().get(0).getSubjectName();
 
@@ -93,7 +94,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "passTestPositive")
-    public static Object[][] passTestPositiveTest() throws SAXException, IOException {
+    public static Object[][] passTestPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][2];
         obj[0][0] = Parser.getPositiveDataList().get(1).getSubjectID();
         obj[0][1] = Parser.getPositiveDataList().get(1).getSubjectName();
@@ -102,7 +103,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "passTestNegative")
-    public static Object[][] passTestNegativeTest() throws SAXException, IOException {
+    public static Object[][] passTestNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][2];
         obj[0][0] = Parser.getNegativeDataList().get(0).getSubjectID();
         obj[0][1] = Parser.getNegativeDataList().get(0).getSubjectName();
@@ -111,7 +112,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "showResultsPositive")
-    public static Object[][] showResultsPositiveTest() throws SAXException, IOException {
+    public static Object[][] showResultsPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][4];
         obj[0][0] = Parser.getPositiveDataList().get(0).getUserID();
         obj[0][1] = Parser.getPositiveDataList().get(0).getSubjectID();
@@ -122,7 +123,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "showResultsNegative")
-    public static Object[][] showResultsNegativeTest() throws SAXException, IOException {
+    public static Object[][] showResultsNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][1];
         obj[0][0] = Parser.getNegativeDataList().get(0).getUserID();
 
@@ -130,7 +131,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "writeResultsPositive")
-    public static Object[][] writeResultsPositiveTest() throws SAXException, IOException {
+    public static Object[][] writeResultsPositiveTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][4];
         obj[0][0] = Parser.getPositiveDataList().get(0).getUserID();
         obj[0][1] = Parser.getPositiveDataList().get(0).getSubjectID();
@@ -141,7 +142,7 @@ public class DataProviderTM {
     }
 
     @DataProvider(name = "writeResultsNegative")
-    public static Object[][] writeResultsNegativeTest() throws SAXException, IOException {
+    public static Object[][] writeResultsNegativeTest() throws SAXException, IOException, ParserConfigurationException {
         Object obj[][] = new Object[1][4];
         obj[0][0] = Parser.getNegativeDataList().get(0).getUserID();
         obj[0][1] = Parser.getNegativeDataList().get(0).getSubjectID();
