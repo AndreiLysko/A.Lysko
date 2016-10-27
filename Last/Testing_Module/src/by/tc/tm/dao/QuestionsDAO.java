@@ -13,7 +13,7 @@ public interface QuestionsDAO {
 
     List<Subject> chooseSubject() throws DAOException;
 	
-	void addQuestion(int userID, Question question) throws DAOException;
+	boolean addQuestion(int subject_id, Question question) throws DAOException;
 
 	List<Question> passTest(int subject_id, String subject_name) throws DAOException;
 

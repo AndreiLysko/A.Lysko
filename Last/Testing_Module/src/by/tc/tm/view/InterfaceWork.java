@@ -106,7 +106,6 @@ public class InterfaceWork {
                     System.out.println("Incorrectly inputted command. Try again: ");
                     break;
             }
-
         }
     }
 

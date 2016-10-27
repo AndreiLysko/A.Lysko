@@ -1,8 +1,6 @@
 package by.tc.tm.bean.entity;
 
-import java.io.Serializable;
-
-public class Question implements Serializable   {
+public class Question {
 
     private int id_subject;
     private String name_subject;

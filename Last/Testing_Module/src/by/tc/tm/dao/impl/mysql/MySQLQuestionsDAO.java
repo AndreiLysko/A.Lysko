@@ -84,7 +84,7 @@ public class MySQLQuestionsDAO implements QuestionsDAO {
 	}
 
 	@Override
-	public void addQuestion(int subject_id, Question question) throws DAOException {
+	public boolean addQuestion(int subject_id, Question question) throws DAOException {
 		Connection connection = null;
 
 		try {
@@ -102,6 +102,7 @@ public class MySQLQuestionsDAO implements QuestionsDAO {
 		} finally {
 			try {
 				ConnectionPool.getInstance().returnConnection(connection);
+				return true;
 			} catch (SQLException | InterruptedException e) {
 				throw new DAOException(e.getMessage());
 			}

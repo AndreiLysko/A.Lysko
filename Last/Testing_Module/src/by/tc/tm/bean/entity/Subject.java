@@ -8,6 +8,10 @@ public class Subject {
     public Subject() {
     }
 
+    public Subject(String subject_name) {
+        this.subject_name = subject_name;
+    }
+
     public Subject(int subjectID, String subject_name) {
         this.subject_name = subject_name;
         this.subjectID = subjectID;

@@ -42,7 +42,6 @@ public class MySQLUserDAO implements UserDAO {
 		}
 
 		return user;
-
 	}
 
 	@Override

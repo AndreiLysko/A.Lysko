@@ -2,9 +2,16 @@ package by.tc.tm.bean.entity;
 
 public class User {
 
-    private final int id;
-    private final String username;
+    private int id;
+    private String username;
     private int priviledge;
+
+    public User() {
+    }
+
+    public User(String username) {
+        this.username = username;
+    }
 
     public User(int id, String username) {
         this.id = id;

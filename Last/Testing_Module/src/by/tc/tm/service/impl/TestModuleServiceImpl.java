@@ -15,14 +15,14 @@ public class TestModuleServiceImpl implements TestModuleService {
 
 
     @Override
-    public void addQuestion(int subject_ID, String subject_name, String question, int answerNumber, int points) throws ServiceException {
+    public boolean addQuestion(int subject_ID, String subject_name, String question, int answerNumber, int points) throws ServiceException {
 
         if(!Validate.question(subject_ID, question)) {
             throw new ServiceException("Incorrect parameters");
         }
 
         try {
-            QuestionsDAOFactory.getInstance().getQuestionsDAO().addQuestion(subject_ID,new Question(subject_ID, subject_name,question,answerNumber,points));
+            return QuestionsDAOFactory.getInstance().getQuestionsDAO().addQuestion(subject_ID,new Question(subject_ID, subject_name,question,answerNumber,points));
         } catch (DAOException e) {
             throw new ServiceException(e.getMessage());
         }

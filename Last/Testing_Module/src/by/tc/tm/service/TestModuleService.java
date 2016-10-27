@@ -13,7 +13,7 @@ public interface TestModuleService {
 
     List<Subject> chooseSubject() throws ServiceException;
 
-    void addQuestion(int subject_ID, String subject_name, String question, int answerNumber, int points) throws ServiceException;
+    boolean addQuestion(int subject_ID, String subject_name, String question, int answerNumber, int points) throws ServiceException;
 
     List<Question> passTest(int subject_id, String subject_name) throws ServiceException;
 

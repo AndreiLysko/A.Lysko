@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.testmodule.org/data"
+        xmlns:tns="http://www.testmodule.org/data" elementFormDefault="qualified">
+
+    <element name="tests">
+        <complexType>
+            <sequence>
+                <element name="positive_test" type="tns:data" minOccurs="1"
+                         maxOccurs="10" />
+                <element name="negative_test" type="tns:data" minOccurs="1"
+                         maxOccurs="10" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="data">
+        <sequence>
+
+            <element name="userID" type="int" />
+            <element name="login" type="string" />
+            <element name="password" type="string" />
+            <element name="subjectID" type="int" />
+            <element name="subjectName" type="string" />
+            <element name="question" type="string" />
+            <element name="answerNumber" type="int" />
+            <element name="points" type="int" />
+
+        </sequence>
+
+        <attribute name="id" use="required">
+        </attribute>
+
+    </complexType>
+
+
+</schema>
