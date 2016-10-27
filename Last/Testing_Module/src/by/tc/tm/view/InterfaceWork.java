@@ -167,8 +167,8 @@ public class InterfaceWork {
         ChooseSubjectRequest chooseSubjectRequest = new ChooseSubjectRequest();
         chooseSubjectRequest.setCommandName("CHOOSE_SUBJECT");
         ChooseSubjectResponse response = (ChooseSubjectResponse)controller.doRequest(chooseSubjectRequest);
-        int i = 1;
         List<Subject> subjects = response.getSubjects();
+        int i = 1;
         for (Subject s : subjects){
             System.out.println(i + ". " + s.getSubject_name().toUpperCase());
             i++;
@@ -273,9 +273,8 @@ public class InterfaceWork {
 
     private static void passTest(){
 
-        if (subjectID < 1){
-            chooseSubject();
-        }
+        chooseSubject();
+
         PassTestRequest request = new PassTestRequest();
         request.setCommandName("PASS_TEST");
         request.setSubject_id(subjectID);
@@ -306,15 +305,13 @@ public class InterfaceWork {
             }
             successPercentage = (points*100)/totalPoints;
             System.out.println("Your point is "+ successPercentage + "%");
+            writeResults();
 
         } else {
             System.out.println("No questions have been found");
         }
         if (response.isErrorStatus()) {
             System.out.println(response.getErrorMessage());
-        }
-        else {
-            writeResults();
         }
     }
 
